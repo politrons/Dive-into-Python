@@ -6,11 +6,11 @@ Here we cover with examples the most famous features of [Python 3](https://www.p
 
 ## Features
 
-* **[Classes](com/politrons/Classes.py)**
-* **[Collections](com/politrons/Collections.py)**
-* **[Conditions](com/politrons/Conditions.py)**
-* **[Types](com/politrons/Types.py)**
-* **[Static Types](com/politrons/StaticType.py)**
-* **[Error Handling](com/politrons/ErrorHandling.py)**
-* **[Functions](com/politrons/Functions.py)**
-* **[Monads](com/politrons/Monads.py)**
+* **[Classes](com/politrons/features/Classes.py)**
+* **[Collections](com/politrons/features/Collections.py)**
+* **[Conditions](com/politrons/features/Conditions.py)**
+* **[Types](com/politrons/features/Types.py)**
+* **[Static Types](com/politrons/features/StaticType.py)**
+* **[Error Handling](com/politrons/features/ErrorHandling.py)**
+* **[Functions](com/politrons/features/Functions.py)**
+* **[Monads](com/politrons/features/Monads.py)**
