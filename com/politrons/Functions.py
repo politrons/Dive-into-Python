@@ -7,7 +7,6 @@
 def myFirstFunction():
     print("Hello python function!")
 
-
 myFirstFunction()
 
 '''As a Dynamic type language you dont have to specify the types. Because you know what you're doing XD!

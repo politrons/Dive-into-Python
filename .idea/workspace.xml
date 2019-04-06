@@ -2,495 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8be487bd-795f-4553-99bf-91d578dccde6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/pabloperezgarcia.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/com/politrons/Classes.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/com/politrons/Collections.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/com/politrons/Conditions.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/com/politrons/ErrorHandling.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/com/politrons/Functions.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/com/politrons/Monads.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/com/politrons/StaticType.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/com/politrons/Types.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/python.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../EtaLang_mock_server/.idea/modules/EtaLang-mock-server.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../EtaLang_mock_server/.idea/modules/EtaLang-mock-server_main.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../EtaLang_mock_server/.idea/modules/EtaLang-mock-server_test.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../EtaLang_mock_server/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../EtaLang_mock_server/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../EtaLang_mock_server/eta/Main.hs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../EtaLang_mock_server/eta/ModelTypes.hs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../EtaLang_mock_server/eta/ScottyHttpServer.hs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../EtaLang_mock_server/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../EtaLang_mock_server/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../EtaLang_mock_server/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../EtaLang_mock_server/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../EtaLang_mock_server/settings.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Haskell_event_source/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Haskell_event_source/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Haskell_event_source/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Haskell_event_source/eta/Main.hs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Haskell_event_source/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Haskell_event_source/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Haskell_event_source/settings.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ReactiveSpark/.idea/hydra.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ReactiveSpark/.idea/libraries/sbt__aopalliance_aopalliance_1_0_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ReactiveSpark/.idea/libraries/sbt__com_clearspring_analytics_stream_2_7_0_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ReactiveSpark/.idea/libraries/sbt__com_esotericsoftware_kryo_shaded_3_0_3_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ReactiveSpark/.idea/libraries/sbt__com_esotericsoftware_minlog_1_3_0_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ReactiveSpark/.idea/libraries/sbt__com_fasterxml_jackson_core_jackson_annotations_2_6_5_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ReactiveSpark/.idea/libraries/sbt__com_fasterxml_jackson_core_jackson_core_2_6_5_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ReactiveSpark/.idea/libraries/sbt__com_fasterxml_jackson_core_jackson_databind_2_6_5_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ReactiveSpark/.idea/libraries/sbt__com_fasterxml_jackson_module_jackson_module_paranamer_2_6_5_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ReactiveSpark/.idea/libraries/sbt__com_fasterxml_jackson_module_jackson_module_scala_2_11_2_6_5_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ReactiveSpark/.idea/libraries/sbt__com_google_code_findbugs_jsr305_1_3_9_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ReactiveSpark/.idea/libraries/sbt__com_google_code_gson_gson_2_2_4_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ReactiveSpark/.idea/libraries/sbt__com_google_guava_guava_11_0_2_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ReactiveSpark/.idea/libraries/sbt__com_google_inject_guice_3_0_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ReactiveSpark/.idea/libraries/sbt__com_google_protobuf_protobuf_java_2_5_0_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ReactiveSpark/.idea/libraries/sbt__com_jamesmurty_utils_java_xmlbuilder_1_0_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ReactiveSpark/.idea/libraries/sbt__com_ning_compress_lzf_1_0_3_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ReactiveSpark/.idea/libraries/sbt__com_thoughtworks_paranamer_paranamer_2_6_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ReactiveSpark/.idea/libraries/sbt__com_twitter_chill_2_11_0_8_0_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ReactiveSpark/.idea/libraries/sbt__com_twitter_chill_java_0_8_0_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ReactiveSpark/.idea/libraries/sbt__commons_beanutils_commons_beanutils_1_7_0_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ReactiveSpark/.idea/libraries/sbt__commons_beanutils_commons_beanutils_core_1_8_0_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ReactiveSpark/.idea/libraries/sbt__commons_cli_commons_cli_1_2_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ReactiveSpark/.idea/libraries/sbt__commons_codec_commons_codec_1_8_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ReactiveSpark/.idea/libraries/sbt__commons_collections_commons_collections_3_2_2_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ReactiveSpark/.idea/libraries/sbt__commons_configuration_commons_configuration_1_6_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ReactiveSpark/.idea/libraries/sbt__commons_digester_commons_digester_1_8_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ReactiveSpark/.idea/libraries/sbt__commons_httpclient_commons_httpclient_3_1_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ReactiveSpark/.idea/libraries/sbt__commons_io_commons_io_2_4_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ReactiveSpark/.idea/libraries/sbt__commons_lang_commons_lang_2_6_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ReactiveSpark/.idea/libraries/sbt__commons_net_commons_net_2_2_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ReactiveSpark/.idea/libraries/sbt__io_dropwizard_metrics_metrics_core_3_1_2_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ReactiveSpark/.idea/libraries/sbt__io_dropwizard_metrics_metrics_graphite_3_1_2_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ReactiveSpark/.idea/libraries/sbt__io_dropwizard_metrics_metrics_json_3_1_2_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ReactiveSpark/.idea/libraries/sbt__io_dropwizard_metrics_metrics_jvm_3_1_2_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ReactiveSpark/.idea/libraries/sbt__io_netty_netty_3_9_9_Final_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ReactiveSpark/.idea/libraries/sbt__io_netty_netty_all_4_0_43_Final_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ReactiveSpark/.idea/libraries/sbt__javax_activation_activation_1_1_1_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ReactiveSpark/.idea/libraries/sbt__javax_annotation_javax_annotation_api_1_2_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ReactiveSpark/.idea/libraries/sbt__javax_inject_javax_inject_1_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ReactiveSpark/.idea/libraries/sbt__javax_mail_mail_1_4_7_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ReactiveSpark/.idea/libraries/sbt__javax_servlet_javax_servlet_api_3_1_0_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ReactiveSpark/.idea/libraries/sbt__javax_validation_validation_api_1_1_0_Final_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ReactiveSpark/.idea/libraries/sbt__javax_ws_rs_javax_ws_rs_api_2_0_1_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ReactiveSpark/.idea/libraries/sbt__javax_xml_bind_jaxb_api_2_2_2_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ReactiveSpark/.idea/libraries/sbt__javax_xml_stream_stax_api_1_0_2_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ReactiveSpark/.idea/libraries/sbt__jline_jline_0_9_94_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ReactiveSpark/.idea/libraries/sbt__junit_junit_4_10_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ReactiveSpark/.idea/libraries/sbt__log4j_log4j_1_2_17_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ReactiveSpark/.idea/libraries/sbt__mx4j_mx4j_3_0_2_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ReactiveSpark/.idea/libraries/sbt__net_iharder_base64_2_3_8_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ReactiveSpark/.idea/libraries/sbt__net_java_dev_jets3t_jets3t_0_9_3_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ReactiveSpark/.idea/libraries/sbt__net_jpountz_lz4_lz4_1_3_0_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ReactiveSpark/.idea/libraries/sbt__net_razorvine_pyrolite_4_13_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ReactiveSpark/.idea/libraries/sbt__net_sf_py4j_py4j_0_10_4_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ReactiveSpark/.idea/libraries/sbt__org_apache_avro_avro_1_7_7_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ReactiveSpark/.idea/libraries/sbt__org_apache_avro_avro_ipc_1_7_7_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ReactiveSpark/.idea/libraries/sbt__org_apache_avro_avro_ipc_1_7_7_tests_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ReactiveSpark/.idea/libraries/sbt__org_apache_avro_avro_mapred_1_7_7_hadoop2_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ReactiveSpark/.idea/libraries/sbt__org_apache_commons_commons_compress_1_4_1_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ReactiveSpark/.idea/libraries/sbt__org_apache_commons_commons_crypto_1_0_0_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ReactiveSpark/.idea/libraries/sbt__org_apache_commons_commons_lang3_3_5_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ReactiveSpark/.idea/libraries/sbt__org_apache_commons_commons_math3_3_4_1_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ReactiveSpark/.idea/libraries/sbt__org_apache_curator_curator_client_2_6_0_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ReactiveSpark/.idea/libraries/sbt__org_apache_curator_curator_framework_2_6_0_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ReactiveSpark/.idea/libraries/sbt__org_apache_curator_curator_recipes_2_6_0_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ReactiveSpark/.idea/libraries/sbt__org_apache_directory_api_api_asn1_api_1_0_0_M20_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ReactiveSpark/.idea/libraries/sbt__org_apache_directory_api_api_util_1_0_0_M20_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ReactiveSpark/.idea/libraries/sbt__org_apache_directory_server_apacheds_i18n_2_0_0_M15_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ReactiveSpark/.idea/libraries/sbt__org_apache_directory_server_apacheds_kerberos_codec_2_0_0_M15_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ReactiveSpark/.idea/libraries/sbt__org_apache_hadoop_hadoop_annotations_2_6_5_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ReactiveSpark/.idea/libraries/sbt__org_apache_hadoop_hadoop_auth_2_6_5_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ReactiveSpark/.idea/libraries/sbt__org_apache_hadoop_hadoop_client_2_6_5_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ReactiveSpark/.idea/libraries/sbt__org_apache_hadoop_hadoop_common_2_6_5_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ReactiveSpark/.idea/libraries/sbt__org_apache_hadoop_hadoop_hdfs_2_6_5_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ReactiveSpark/.idea/libraries/sbt__org_apache_hadoop_hadoop_mapreduce_client_app_2_6_5_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ReactiveSpark/.idea/libraries/sbt__org_apache_hadoop_hadoop_mapreduce_client_common_2_6_5_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ReactiveSpark/.idea/libraries/sbt__org_apache_hadoop_hadoop_mapreduce_client_core_2_6_5_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ReactiveSpark/.idea/libraries/sbt__org_apache_hadoop_hadoop_mapreduce_client_jobclient_2_6_5_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ReactiveSpark/.idea/libraries/sbt__org_apache_hadoop_hadoop_mapreduce_client_shuffle_2_6_5_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ReactiveSpark/.idea/libraries/sbt__org_apache_hadoop_hadoop_yarn_api_2_6_5_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ReactiveSpark/.idea/libraries/sbt__org_apache_hadoop_hadoop_yarn_client_2_6_5_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ReactiveSpark/.idea/libraries/sbt__org_apache_hadoop_hadoop_yarn_common_2_6_5_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ReactiveSpark/.idea/libraries/sbt__org_apache_hadoop_hadoop_yarn_server_common_2_6_5_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ReactiveSpark/.idea/libraries/sbt__org_apache_httpcomponents_httpclient_4_3_6_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ReactiveSpark/.idea/libraries/sbt__org_apache_httpcomponents_httpcore_4_3_3_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ReactiveSpark/.idea/libraries/sbt__org_apache_ivy_ivy_2_4_0_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ReactiveSpark/.idea/libraries/sbt__org_apache_spark_spark_core_2_11_2_2_0_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ReactiveSpark/.idea/libraries/sbt__org_apache_spark_spark_launcher_2_11_2_2_0_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ReactiveSpark/.idea/libraries/sbt__org_apache_spark_spark_network_common_2_11_2_2_0_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ReactiveSpark/.idea/libraries/sbt__org_apache_spark_spark_network_shuffle_2_11_2_2_0_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ReactiveSpark/.idea/libraries/sbt__org_apache_spark_spark_tags_2_11_2_2_0_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ReactiveSpark/.idea/libraries/sbt__org_apache_spark_spark_unsafe_2_11_2_2_0_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ReactiveSpark/.idea/libraries/sbt__org_apache_xbean_xbean_asm5_shaded_4_4_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ReactiveSpark/.idea/libraries/sbt__org_apache_zookeeper_zookeeper_3_4_6_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ReactiveSpark/.idea/libraries/sbt__org_bouncycastle_bcprov_jdk15on_1_51_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ReactiveSpark/.idea/libraries/sbt__org_codehaus_jackson_jackson_core_asl_1_9_13_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ReactiveSpark/.idea/libraries/sbt__org_codehaus_jackson_jackson_jaxrs_1_9_13_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ReactiveSpark/.idea/libraries/sbt__org_codehaus_jackson_jackson_mapper_asl_1_9_13_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ReactiveSpark/.idea/libraries/sbt__org_codehaus_jackson_jackson_xc_1_9_13_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ReactiveSpark/.idea/libraries/sbt__org_codehaus_jettison_jettison_1_1_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ReactiveSpark/.idea/libraries/sbt__org_fusesource_leveldbjni_leveldbjni_all_1_8_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ReactiveSpark/.idea/libraries/sbt__org_glassfish_hk2_external_aopalliance_repackaged_2_4_0_b34_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ReactiveSpark/.idea/libraries/sbt__org_glassfish_hk2_external_javax_inject_2_4_0_b34_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ReactiveSpark/.idea/libraries/sbt__org_glassfish_hk2_hk2_api_2_4_0_b34_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ReactiveSpark/.idea/libraries/sbt__org_glassfish_hk2_hk2_locator_2_4_0_b34_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ReactiveSpark/.idea/libraries/sbt__org_glassfish_hk2_hk2_utils_2_4_0_b34_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ReactiveSpark/.idea/libraries/sbt__org_glassfish_hk2_osgi_resource_locator_1_0_1_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ReactiveSpark/.idea/libraries/sbt__org_glassfish_jersey_bundles_repackaged_jersey_guava_2_22_2_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ReactiveSpark/.idea/libraries/sbt__org_glassfish_jersey_containers_jersey_container_servlet_2_22_2_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ReactiveSpark/.idea/libraries/sbt__org_glassfish_jersey_containers_jersey_container_servlet_core_2_22_2_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ReactiveSpark/.idea/libraries/sbt__org_glassfish_jersey_core_jersey_client_2_22_2_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ReactiveSpark/.idea/libraries/sbt__org_glassfish_jersey_core_jersey_common_2_22_2_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ReactiveSpark/.idea/libraries/sbt__org_glassfish_jersey_core_jersey_server_2_22_2_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ReactiveSpark/.idea/libraries/sbt__org_glassfish_jersey_media_jersey_media_jaxb_2_22_2_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ReactiveSpark/.idea/libraries/sbt__org_hamcrest_hamcrest_core_1_1_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ReactiveSpark/.idea/libraries/sbt__org_htrace_htrace_core_3_0_4_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ReactiveSpark/.idea/libraries/sbt__org_javassist_javassist_3_18_1_GA_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ReactiveSpark/.idea/libraries/sbt__org_json4s_json4s_ast_2_11_3_2_11_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ReactiveSpark/.idea/libraries/sbt__org_json4s_json4s_core_2_11_3_2_11_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ReactiveSpark/.idea/libraries/sbt__org_json4s_json4s_jackson_2_11_3_2_11_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ReactiveSpark/.idea/libraries/sbt__org_mortbay_jetty_jetty_util_6_1_26_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ReactiveSpark/.idea/libraries/sbt__org_objenesis_objenesis_2_1_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ReactiveSpark/.idea/libraries/sbt__org_roaringbitmap_RoaringBitmap_0_5_11_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ReactiveSpark/.idea/libraries/sbt__org_scala_lang_modules_scala_parser_combinators_2_11_1_0_4_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ReactiveSpark/.idea/libraries/sbt__org_scala_lang_modules_scala_xml_2_11_1_0_5_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ReactiveSpark/.idea/libraries/sbt__org_scala_lang_scala_compiler_2_11_12_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ReactiveSpark/.idea/libraries/sbt__org_scala_lang_scala_library_2_11_12_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ReactiveSpark/.idea/libraries/sbt__org_scala_lang_scala_reflect_2_11_12_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ReactiveSpark/.idea/libraries/sbt__org_scala_lang_scalap_2_11_12_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ReactiveSpark/.idea/libraries/sbt__org_slf4j_jcl_over_slf4j_1_7_16_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ReactiveSpark/.idea/libraries/sbt__org_slf4j_jul_to_slf4j_1_7_16_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ReactiveSpark/.idea/libraries/sbt__org_slf4j_slf4j_api_1_7_16_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ReactiveSpark/.idea/libraries/sbt__org_slf4j_slf4j_log4j12_1_7_16_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ReactiveSpark/.idea/libraries/sbt__org_sonatype_sisu_inject_cglib_2_2_1_v20090111_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ReactiveSpark/.idea/libraries/sbt__org_spark_project_spark_unused_1_0_0_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ReactiveSpark/.idea/libraries/sbt__org_tukaani_xz_1_0_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ReactiveSpark/.idea/libraries/sbt__org_xerial_snappy_snappy_java_1_1_2_6_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ReactiveSpark/.idea/libraries/sbt__oro_oro_2_0_8_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ReactiveSpark/.idea/libraries/sbt__xerces_xercesImpl_2_9_1_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ReactiveSpark/.idea/libraries/sbt__xml_apis_xml_apis_1_3_04_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ReactiveSpark/.idea/libraries/sbt__xmlenc_xmlenc_0_52_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ReactiveSpark/.idea/markdown-navigator.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ReactiveSpark/.idea/modules/reactivespark-build.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ReactiveSpark/.idea/scala_compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ReactiveSpark/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ReactiveSpark/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ReactiveSpark/src/main/resources/distinct.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ReactiveSpark/src/main/resources/file1.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ReactiveSpark/src/main/resources/file2.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ReactiveSpark/src/main/resources/file3.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ReactiveSpark/src/main/resources/img/rsz_1createc.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ReactiveSpark/src/main/resources/img/rsz_1filter.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ReactiveSpark/src/main/resources/img/rsz_1zipo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ReactiveSpark/src/main/resources/img/rsz_flatmap.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ReactiveSpark/src/main/resources/img/spark.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ReactiveSpark/src/main/resources/pipeScript.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ReactiveSpark/src/main/resources/story1.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ReactiveSpark/src/main/resources/story2.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ReactiveSpark/src/test/scala/SparkCompose.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ReactiveSpark/src/test/scala/SparkCreation.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ReactiveSpark/src/test/scala/SparkFilter.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ReactiveSpark/src/test/scala/SparkTransform.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../akka-samples-cluster-scala/src/main/scala/sample/cluster/simple/SimpleClusterApp.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../akka-samples-cluster-scala/src/main/scala/sample/cluster/simple/SimpleClusterListener.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../akka-samples-cluster-scala/src/main/scala/sample/cluster/simple/SimpleClusterListener2.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../diveIntoElm/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../diveIntoElm/.idea/markdown-navigator/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../diveIntoElm/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../diveIntoElm/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../diveIntoElm/.idea/sbt.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../diveIntoElm/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../diveIntoElm/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../diveIntoElm/README.MD" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../diveIntoElm/diveIntoElm.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../diveIntoElm/elm.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../diveIntoElm/src/.idea/markdown-navigator.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../diveIntoElm/src/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../diveIntoElm/src/Buttons.elm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../diveIntoElm/src/HttpClient.elm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../diveIntoElm/src/Main.elm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../diveIntoElm/src/TextField.elm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/codeStyles/Project.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/dictionaries/pabloperezgarcia.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/dictionaries/pabloperezgarcia.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_chuusai_shapeless_2_11_2_3_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_datastax_cassandra_cassandra_driver_core_3_2_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_fasterxml_jackson_core_jackson_annotations_2_8_6.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_fasterxml_jackson_core_jackson_core_2_8_6.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_fasterxml_jackson_core_jackson_databind_2_8_6.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_fasterxml_jackson_module_jackson_module_paranamer_2_8_6.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_fasterxml_jackson_module_jackson_module_scala_2_11_2_8_6.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_github_ben_manes_caffeine_caffeine_2_3_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_github_jnr_jffi_1_2_10.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_github_jnr_jffi_native_1_2_10.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_github_jnr_jnr_constants_0_9_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_github_jnr_jnr_ffi_2_0_7.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_github_jnr_jnr_posix_3_0_27.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_github_jnr_jnr_x86asm_1_0_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_google_code_findbugs_jsr305_2_0_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_google_guava_guava_19_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_google_protobuf_protobuf_java_3_2_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_h2database_h2_1_4_192.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_lihaoyi_fastparse_2_11_0_4_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_lihaoyi_fastparse_utils_2_11_0_4_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_lihaoyi_scalaparse_2_11_0_4_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_lihaoyi_sourcecode_2_11_0_1_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_thoughtworks_paranamer_paranamer_2_8.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_trueaccord_lenses_lenses_2_11_0_4_10.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_trueaccord_scalapb_scalapb_runtime_2_11_0_6_0_pre2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_twitter_finagle_base_http_2_11_6_43_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_twitter_finagle_core_2_11_6_43_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_twitter_finagle_http2_2_11_6_43_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_twitter_finagle_http_2_11_6_43_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_twitter_finagle_netty4_2_11_6_43_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_twitter_finagle_netty4_http_2_11_6_43_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_twitter_finagle_toggle_2_11_6_43_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_twitter_util_app_2_11_6_42_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_twitter_util_cache_2_11_6_42_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_twitter_util_codec_2_11_6_42_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_twitter_util_collection_2_11_6_42_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_twitter_util_core_2_11_6_42_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_twitter_util_function_2_11_6_42_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_twitter_util_hashing_2_11_6_42_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_twitter_util_jvm_2_11_6_42_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_twitter_util_lint_2_11_6_42_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_twitter_util_logging_2_11_6_42_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_twitter_util_registry_2_11_6_42_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_twitter_util_security_2_11_6_42_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_twitter_util_stats_2_11_6_42_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_twitter_util_tunable_2_11_6_42_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__commons_codec_commons_codec_1_9.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__commons_lang_commons_lang_2_6.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__commons_logging_commons_logging_1_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__io_dropwizard_metrics_metrics_core_3_1_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__io_netty_netty_3_10_1_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__io_netty_netty_buffer_4_1_8_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__io_netty_netty_codec_4_1_8_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__io_netty_netty_codec_dns_4_1_5_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__io_netty_netty_codec_http2_4_1_8_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__io_netty_netty_codec_http_4_1_8_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__io_netty_netty_codec_socks_4_1_8_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__io_netty_netty_common_4_1_8_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__io_netty_netty_handler_4_1_8_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__io_netty_netty_handler_proxy_4_1_8_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__io_netty_netty_resolver_4_1_8_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__io_netty_netty_resolver_dns_4_1_5_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__io_netty_netty_transport_4_1_8_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__io_netty_netty_transport_native_epoll_linux_x86_64_4_1_8_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__io_reactivex_rxjava_1_2_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__io_reactivex_rxscala_2_11_0_26_5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__io_vertx_vertx_core_3_3_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__junit_junit_4_12.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__org_apache_httpcomponents_httpclient_4_4_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__org_apache_httpcomponents_httpcore_4_4_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__org_apache_thrift_libthrift_0_10_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__org_clapper_grizzled_slf4j_2_11_1_3_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__org_glassfish_grizzly_grizzly_framework_2_4_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__org_glassfish_grizzly_grizzly_http_2_4_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__org_glassfish_grizzly_grizzly_http_server_2_4_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__org_hamcrest_hamcrest_core_1_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__org_ow2_asm_asm_5_0_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__org_ow2_asm_asm_analysis_5_0_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__org_ow2_asm_asm_commons_5_0_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__org_ow2_asm_asm_tree_5_0_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__org_ow2_asm_asm_util_5_0_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__org_scala_lang_modules_scala_parser_combinators_2_11_1_0_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__org_scala_lang_modules_scala_xml_2_11_1_0_5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__org_scala_lang_scala_library_2_11_10.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__org_scala_lang_scala_reflect_2_11_8.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__org_scalactic_scalactic_2_11_3_0_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__org_scalameta_common_2_11_1_7_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__org_scalameta_dialects_2_11_1_7_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__org_scalameta_inline_2_11_1_7_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__org_scalameta_inputs_2_11_1_7_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__org_scalameta_io_2_11_1_7_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__org_scalameta_parsers_2_11_1_7_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__org_scalameta_quasiquotes_2_11_1_7_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__org_scalameta_scalameta_2_11_1_7_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__org_scalameta_semantic_2_11_1_7_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__org_scalameta_tokenizers_2_11_1_7_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__org_scalameta_tokens_2_11_1_7_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__org_scalameta_transversers_2_11_1_7_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__org_scalameta_trees_2_11_1_7_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__org_scalatest_scalatest_2_11_3_0_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__org_scalaz_scalaz_core_2_11_7_2_9.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__org_slf4j_slf4j_api_1_7_12.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__org_typelevel_macro_compat_2_11_1_1_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/modules/Cassandra/Cassandra.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/modules/Cassandra/Cassandra_main.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/modules/Cassandra/Cassandra_test.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/modules/ReactiveScala.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/modules/ReactiveScala_main.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/modules/ReactiveScala_test.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/modules/h2/h2.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/modules/h2/h2_main.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/modules/h2/h2_test.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/modules/macros/macros.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/modules/macros/macros_main.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/modules/macros/macros_test.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/modules/scala_features/scala_features.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/modules/scala_features/scala_features_main.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/modules/scala_features/scala_features_test.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/modules/test_macros/test_macros.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/modules/test_macros/test_macros_main.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/modules/test_macros/test_macros_test.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/scala_compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/scala_compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Cassandra/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Cassandra/src/main/scala/CassandraManagement.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../h2/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../h2/src/main/resources/h2-1.3.161.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../h2/src/main/resources/runh2.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../h2/src/main/resources/sakila.h2.db" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../h2/src/main/resources/sakila.h2.db.origin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../h2/src/main/scala/H2Runner.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../macros/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../macros/src/main/scala/app/impl/macros/::.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../macros/src/main/scala/app/impl/macros/Macros.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../macros/src/main/scala/app/impl/macros/ResponseValidator.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scala_features/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scala_features/src/main/resources/META-INF/services/com.twitter.finagle.Resolver" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scala_features/src/main/resources/img/design.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scala_features/src/main/resources/img/finagle.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scala_features/src/main/resources/img/flatMap.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scala_features/src/main/resources/img/lambda.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scala_features/src/main/resources/img/lambda.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scala_features/src/main/resources/img/miles.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scala_features/src/main/resources/img/rsz_1buffer.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scala_features/src/main/resources/img/rsz_1createc.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scala_features/src/main/resources/img/rsz_1filter.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scala_features/src/main/resources/img/rsz_1zipo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scala_features/src/main/resources/img/rsz_2subscribeonc.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scala_features/src/main/resources/img/rsz_flatmap.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scala_features/src/main/resources/img/rsz_publishconnectc.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scala_features/src/main/resources/img/rsz_reactive-extensions.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scala_features/src/main/resources/img/rsz_scala.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scala_features/src/main/resources/img/rsz_stream.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scala_features/src/main/resources/img/shapeless.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scala_features/src/main/scala/app/NumberInterface.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scala_features/src/main/scala/app/impl/Generic.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scala_features/src/main/scala/app/impl/Utils.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scala_features/src/main/scala/app/impl/finagle/FinagleService.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scala_features/src/main/scala/app/impl/finagle/HttpClient.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scala_features/src/main/scala/app/impl/finagle/HttpServers.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scala_features/src/main/scala/app/impl/finagle/TimeoutFilter.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scala_features/src/main/scala/app/impl/finagle/VertxToFinagle.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scala_features/src/main/scala/app/impl/finagle/resolver/CustomResolver.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scala_features/src/main/scala/app/impl/finagle/resolver/DefaultCustomClient.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scala_features/src/main/scala/app/impl/finagle/resolver/ResolverClient.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scala_features/src/main/scala/app/impl/finagle/resolver/entity/ResponseEntity.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scala_features/src/main/scala/app/impl/finagle/resolver/filter/ResponseWithEntityFilter.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scala_features/src/main/scala/app/impl/finagle/resolver/filter/StripJsonPrefixFilter.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scala_features/src/main/scala/app/impl/finagle/resolver/mapper/BigDecimalDeserializer.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scala_features/src/main/scala/app/impl/finagle/resolver/mapper/BigIntegerDeserializer.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scala_features/src/main/scala/app/impl/finagle/resolver/mapper/ObjectMapperPatcher.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scala_features/src/main/scala/app/impl/finagle/resolver/request/RichHttpRequestBuilder.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scala_features/src/main/scala/app/impl/finagle/workshop/AppendFilter.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scala_features/src/main/scala/app/impl/finagle/workshop/FinagleHttpClient.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scala_features/src/main/scala/app/impl/finagle/workshop/MyGrizzlyServer.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scala_features/src/main/scala/app/impl/finagle/workshop/MyVerticle.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scala_features/src/main/scala/app/impl/finagle/workshop/ReplaceFilter.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scala_features/src/main/scala/app/impl/finagle/workshop/UpperCaseFilter.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scala_features/src/main/scala/app/impl/patterns/behavioral/ChainOfResponsibility.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scala_features/src/main/scala/app/impl/patterns/behavioral/Command.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scala_features/src/main/scala/app/impl/patterns/behavioral/DependencyInjection.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scala_features/src/main/scala/app/impl/patterns/behavioral/NullObject.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scala_features/src/main/scala/app/impl/patterns/behavioral/Strategy.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scala_features/src/main/scala/app/impl/patterns/behavioral/TypeClass.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scala_features/src/main/scala/app/impl/patterns/creational/CakePattern.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scala_features/src/main/scala/app/impl/patterns/creational/Factory.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scala_features/src/main/scala/app/impl/patterns/creational/Lazy.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scala_features/src/main/scala/app/impl/patterns/di/CakePattern.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scala_features/src/main/scala/app/impl/patterns/di/Dependency.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scala_features/src/main/scala/app/impl/patterns/di/DivCalculator.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scala_features/src/main/scala/app/impl/patterns/di/Main.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scala_features/src/main/scala/app/impl/patterns/di/SecondDependency.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scala_features/src/main/scala/app/impl/patterns/di/SumCalculator.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scala_features/src/main/scala/app/impl/patterns/structural/Adapter.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scala_features/src/main/scala/app/impl/patterns/structural/Decorator.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scala_features/src/main/scala/app/impl/rx/Combining.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scala_features/src/main/scala/app/impl/rx/Creating.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scala_features/src/main/scala/app/impl/rx/Filtering.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scala_features/src/main/scala/app/impl/rx/ImplicitObservables.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scala_features/src/main/scala/app/impl/rx/Scheduler.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scala_features/src/main/scala/app/impl/rx/Transforming.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scala_features/src/main/scala/app/impl/scala/Algorithmic.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scala_features/src/main/scala/app/impl/scala/Collections.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scala_features/src/main/scala/app/impl/scala/Comparator.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scala_features/src/main/scala/app/impl/scala/CompoundTypes.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scala_features/src/main/scala/app/impl/scala/CovariantSubType.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scala_features/src/main/scala/app/impl/scala/Currying.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scala_features/src/main/scala/app/impl/scala/EitherFeature.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scala_features/src/main/scala/app/impl/scala/Extractor.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scala_features/src/main/scala/app/impl/scala/Factory.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scala_features/src/main/scala/app/impl/scala/FoldFunction.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scala_features/src/main/scala/app/impl/scala/ForComprenhensions.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scala_features/src/main/scala/app/impl/scala/Functions.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scala_features/src/main/scala/app/impl/scala/FutureFeatures.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scala_features/src/main/scala/app/impl/scala/Generics.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scala_features/src/main/scala/app/impl/scala/Implicit.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scala_features/src/main/scala/app/impl/scala/InferTypes.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scala_features/src/main/scala/app/impl/scala/Interpolation.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scala_features/src/main/scala/app/impl/scala/Monads.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scala_features/src/main/scala/app/impl/scala/PartialFunctions.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scala_features/src/main/scala/app/impl/scala/PatternMatchingFeature.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scala_features/src/main/scala/app/impl/scala/Polimorpishm.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scala_features/src/main/scala/app/impl/scala/SelfReference.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scala_features/src/main/scala/app/impl/scala/Try.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scala_features/src/main/scala/app/impl/scala/TypeClasses.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scala_features/src/main/scala/app/impl/scala/Utils.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scala_features/src/main/scala/app/impl/scalaTest/ScalaTest.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scala_features/src/main/scala/app/impl/scalaz/EitherTMonadTransformer.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scala_features/src/main/scala/app/impl/scalaz/Features.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scala_features/src/main/scala/app/impl/scalaz/FreeMonad.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scala_features/src/main/scala/app/impl/scalaz/FreeMonadWorkshop.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scala_features/src/main/scala/app/impl/scalaz/FunctorFeature.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scala_features/src/main/scala/app/impl/scalaz/LensFeature.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scala_features/src/main/scala/app/impl/scalaz/MemoFeature.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scala_features/src/main/scala/app/impl/scalaz/MonadIO.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scala_features/src/main/scala/app/impl/scalaz/MonadLaws.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scala_features/src/main/scala/app/impl/scalaz/MonadTransformer.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scala_features/src/main/scala/app/impl/scalaz/OptionTMonadTransformer.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scala_features/src/main/scala/app/impl/scalaz/ReaderMonad.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scala_features/src/main/scala/app/impl/scalaz/SequenceFeature.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scala_features/src/main/scala/app/impl/scalaz/StateMonad.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scala_features/src/main/scala/app/impl/scalaz/Tagging.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scala_features/src/main/scala/app/impl/scalaz/TaskFeature.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scala_features/src/main/scala/app/impl/scalaz/TestDSL.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scala_features/src/main/scala/app/impl/scalaz/TraverseFeature.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scala_features/src/main/scala/app/impl/scalaz/WriterMonad.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scala_features/src/main/scala/app/impl/shapeless/CoproductFeature.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scala_features/src/main/scala/app/impl/shapeless/Generic.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scala_features/src/main/scala/app/impl/shapeless/HListUtils.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scala_features/src/main/scala/app/impl/shapeless/HMapFeature.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scala_features/src/main/scala/app/impl/shapeless/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scala_features/src/main/scala/app/impl/shapeless/TagsFeature.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scala_features/src/main/scala/app/impl/shapeless/TuplesExtension.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scala_features/src/main/scala/app/impl/shapeless/Validation.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scala_features/src/main/scala/app/impl/vertx/MyVerticle.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scala_features/src/main/scala/app/impl/vertx/TwitterFutureSupport.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scala_features/src/main/scala/app/implicitObservablesUtils.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scala_features/src/test/resources/META-INF.services/com.twitter.finagle.Resolver" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scala_features/src/test/scala/it/ResolverMasterTemporallyDownTest.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scala_features/src/test/scala/it/ResolverNoMasterNodeTest.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scala_features/src/test/scala/it/ResolverNoNodeAvailableTest.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scala_features/src/test/scala/it/ResolverNodeTemporallyDownTest.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scala_features/src/test/scala/it/ResolverTest.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scala_features/src/test/scala/it/ResolverThreeLevelsTest.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../settings.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../test_macros/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../test_macros/src/main/scala/app/impl/macros/Main.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/DiveIntoPython.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/DiveIntoPython.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/com/politrons/Functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/com/politrons/Functions.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -499,11 +14,11 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/com/politrons/Conditions.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="41">
+            <state relative-caret-position="480">
               <caret line="32" selection-start-line="32" selection-end-line="32" />
             </state>
           </provider>
@@ -524,7 +39,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/com/politrons/Collections.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="610">
+            <state relative-caret-position="1605">
               <caret line="107" column="34" selection-start-line="107" selection-start-column="34" selection-end-line="107" selection-end-column="34" />
             </state>
           </provider>
@@ -533,7 +48,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$USER_HOME$/Library/Caches/PyCharmCE2018.3/python_stubs/-2059032983/builtins.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="229">
+            <state relative-caret-position="13440">
               <caret line="896" column="6" selection-start-line="896" selection-start-column="6" selection-end-line="896" selection-end-column="6" />
             </state>
           </provider>
@@ -542,7 +57,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/com/politrons/Classes.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
+            <state relative-caret-position="75">
               <caret line="5" column="94" selection-start-line="5" selection-start-column="94" selection-end-line="5" selection-end-column="94" />
             </state>
           </provider>
@@ -561,7 +76,7 @@
         <entry file="file://$PROJECT_DIR$/com/politrons/Monads.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="135">
-              <caret line="9" column="49" lean-forward="true" selection-start-line="9" selection-start-column="49" selection-end-line="9" selection-end-column="49" />
+              <caret line="9" column="49" selection-start-line="9" selection-start-column="49" selection-end-line="9" selection-end-column="49" />
             </state>
           </provider>
         </entry>
@@ -569,8 +84,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/com/politrons/Functions.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="223">
-              <caret line="60" column="49" selection-start-line="60" selection-start-column="49" selection-end-line="60" selection-end-column="49" />
+            <state relative-caret-position="105">
+              <caret line="7" column="35" selection-start-line="7" selection-start-column="35" selection-end-line="7" selection-end-column="35" />
             </state>
           </provider>
         </entry>
@@ -587,7 +102,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file:///Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/typing.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
+            <state relative-caret-position="18180">
               <caret line="1222" selection-start-line="1222" selection-end-line="1222" />
             </state>
           </provider>
@@ -608,7 +123,7 @@
     </findStrings>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -643,23 +158,23 @@
         <subPane>
           <expand>
             <path>
-              <item name="DiveIntoPython" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DiveIntoPython" type="462c0819:PsiDirectoryNode" />
+              <item name="Dive-into-Python" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Dive-into-Python" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="DiveIntoPython" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DiveIntoPython" type="462c0819:PsiDirectoryNode" />
+              <item name="Dive-into-Python" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Dive-into-Python" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="DiveIntoPython" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DiveIntoPython" type="462c0819:PsiDirectoryNode" />
+              <item name="Dive-into-Python" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Dive-into-Python" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="politrons" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="DiveIntoPython" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DiveIntoPython" type="462c0819:PsiDirectoryNode" />
+              <item name="Dive-into-Python" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Dive-into-Python" type="462c0819:PsiDirectoryNode" />
               <item name="img" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -671,7 +186,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Python" />
+    <property name="settings.editor.selected.configurable" value="settings.github" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -841,8 +356,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="44" y="23" width="1396" height="877" extended-state="6" />
-    <editor active="true" />
+    <frame x="43" y="23" width="1397" height="877" extended-state="6" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.24963072" />
@@ -856,17 +370,15 @@
       <window_info anchor="bottom" id="Cvs" order="7" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="8" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="9" />
-      <window_info active="true" anchor="bottom" id="Run" order="10" visible="true" weight="0.33070865" />
+      <window_info anchor="bottom" id="Run" order="10" visible="true" weight="0.33070865" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Project" order="3" visible="true" weight="0.1676514" />
+      <window_info active="true" anchor="right" content_ui="combo" id="Project" order="3" visible="true" weight="0.16974169" />
     </layout>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/com/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/com/__init__.py" />
     <entry file="file://$APPLICATION_HOME_DIR$/helpers/typeshed/stdlib/3/builtins.pyi">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="159">
@@ -891,16 +403,51 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/com/politrons/Conditions.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="32" selection-start-line="32" selection-end-line="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/com/politrons/Collections.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1605">
+          <caret line="107" column="34" selection-start-line="107" selection-start-column="34" selection-end-line="107" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$USER_HOME$/Library/Caches/PyCharmCE2018.3/python_stubs/-2059032983/builtins.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="229">
+        <state relative-caret-position="13440">
           <caret line="896" column="6" selection-start-line="896" selection-start-column="6" selection-end-line="896" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/com/politrons/Classes.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="94" selection-start-line="5" selection-start-column="94" selection-end-line="5" selection-end-column="94" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/com/politrons/ErrorHandling.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="6" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/com/politrons/StaticType.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" selection-start-line="4" selection-end-line="4" selection-end-column="18" />
         </state>
       </provider>
     </entry>
     <entry file="file:///Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/typing.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
+        <state relative-caret-position="18180">
           <caret line="1222" selection-start-line="1222" selection-end-line="1222" />
         </state>
       </provider>
@@ -915,52 +462,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/com/politrons/Classes.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="5" column="94" selection-start-line="5" selection-start-column="94" selection-end-line="5" selection-end-column="94" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/com/politrons/ErrorHandling.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="6" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/com/politrons/Conditions.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="41">
-          <caret line="32" selection-start-line="32" selection-end-line="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/com/politrons/Collections.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="610">
-          <caret line="107" column="34" selection-start-line="107" selection-start-column="34" selection-end-line="107" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/com/politrons/Monads.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
-          <caret line="9" column="49" lean-forward="true" selection-start-line="9" selection-start-column="49" selection-end-line="9" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/com/politrons/StaticType.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" selection-start-line="4" selection-end-line="4" selection-end-column="18" />
+          <caret line="9" column="49" selection-start-line="9" selection-start-column="49" selection-end-line="9" selection-end-column="49" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/com/politrons/Functions.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="223">
-          <caret line="60" column="49" selection-start-line="60" selection-start-column="49" selection-end-line="60" selection-end-column="49" />
+        <state relative-caret-position="105">
+          <caret line="7" column="35" selection-start-line="7" selection-start-column="35" selection-end-line="7" selection-end-column="35" />
         </state>
       </provider>
     </entry>
