@@ -1,0 +1,18 @@
+Metadata-Version: 1.1
+Name: OSlash
+Version: 0.5.1
+Summary: Ø for Python 3.4
+Home-page: https://github.com/dbrattli/oslash
+Author: Dag Brattli
+Author-email: dag@brattli.net
+License: Apache License
+Download-URL: https://github.com/dbrattli/oslash
+Description: is a functional library for playing with Functors, Applicatives, and Monads in Python.
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Other Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Topic :: Software Development :: Libraries :: Python Modules

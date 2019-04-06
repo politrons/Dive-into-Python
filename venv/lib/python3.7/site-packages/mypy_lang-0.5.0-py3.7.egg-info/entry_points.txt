@@ -1,0 +1,3 @@
+[console_scripts]
+mypy = mypy.__main__:console_entry
+
