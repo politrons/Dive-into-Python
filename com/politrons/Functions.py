@@ -2,7 +2,6 @@
 #    STANDARD   #
 #################
 ''''Those are examples of how you invoke methods/functions in Python'''
-
 def myFirstFunction():
     print("Hello python function!")
 
@@ -13,7 +12,6 @@ myFirstFunction()
 
 def funcWithArguments(arg1, arg2):
     return arg1 + arg2
-
 
 def printSum(arg1, arg2):
     print("I hope I can sum this two args %s" % (funcWithArguments(arg1, arg2)))
