@@ -1,4 +1,7 @@
-from oslash import Left, Right, Just, Nothing
+import time
+
+from oslash import Left, Right, Just, Nothing, IO, Get, ReadFile, Put
+from datetime import datetime
 
 '''
 One great library to play with Monads is [oslash] to install it just use [pip] command [pip install oslash]
@@ -59,3 +62,40 @@ print(rightResult)
 
 newError = left.bind(lambda x: x + 1981)
 print(newError)
+
+###################
+#       IO        #
+###################
+'''Another monad, this time the IO Monad like Haskell which allow you composition and transformation. 
+   Just like in Haskell the IO it's lazy and it wont be evaluated until the value it's invoked.'''
+ioMonad = IO("Hello world")
+print(ioMonad)
+
+
+def createIO(word) -> IO:
+    return IO(word)
+
+
+def toUpper(word) -> IO:
+    return IO(word.upper())
+
+
+def appendValue(word) -> IO:
+    return IO(word + " at " + str(datetime.now().microsecond))
+
+foo = createIO("Hello") | (lambda word: toUpper(word) | (lambda contents: appendValue(contents)))
+
+time.sleep(2)
+print("now:%s" % str(datetime.now().microsecond))
+time.sleep(2)
+print(foo.value)
+
+
+
+from fn import _
+from fn.op import zipwith
+from itertools import repeat
+
+assert list(map(_ * 2, range(5))) == [0,2,4,6,8]
+assert list(filter(_ < 10, [9,10,11])) == [9]
+assert list(zipwith(_ + _)([0,1,2], repeat(10))) == [10,11,12]
