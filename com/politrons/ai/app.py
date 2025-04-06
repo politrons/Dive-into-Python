@@ -4,13 +4,22 @@ from llama_cpp import Llama
 llm = Llama(model_path="models/llama-2-7b-chat.Q4_K_M.gguf")
 
 # Example prompt
-prompt = "What is the best movie of all times."
+prompt = "what is the meaning of life?"
 
 # Run the model
 output = llm(prompt, max_tokens=100)
 
 # Print the response
-print(output["choices"][0]["text"].strip())
+response = output["choices"][0]["text"].strip()
+print(response)
+
+output = llm(response, max_tokens=100)
+
+response = output["choices"][0]["text"].strip()
+
+print(response)
+
+
 
 
 
