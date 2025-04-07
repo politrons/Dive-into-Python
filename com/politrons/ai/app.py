@@ -1,27 +1,23 @@
+from flask import Flask, request, jsonify, render_template
 from llama_cpp import Llama
 
-# Load the model (make sure the path is correct!)
+app = Flask(__name__)
+
+# Load your model from here https://huggingface.co/ggml-org/Meta-Llama-3.1-8B-Instruct-Q4_0-GGUF/tree/main
 llm = Llama(model_path="models/meta-llama-3.1-8b-instruct-q4_0.gguf")
 
-# Example prompt
-prompt = "what is the meaning of life?"
+@app.route('/')
+def home():
+    return render_template('index.html')
 
-# Run the model
-output = llm(prompt, max_tokens=100)
+@app.route('/ask', methods=['POST'])
+def ask():
+    data = request.get_json()
+    prompt = data.get('prompt', '')
+    # Run the model with your prompt
+    output = llm(prompt, max_tokens=100)
+    response = output["choices"][0]["text"].strip()
+    return jsonify({'response': response})
 
-# Print the response
-response = output["choices"][0]["text"].strip()
-print(response)
-
-output = llm(response, max_tokens=100)
-
-response = output["choices"][0]["text"].strip()
-
-print(response)
-
-
-
-
-
-
-
+if __name__ == '__main__':
+    app.run(debug=True)
