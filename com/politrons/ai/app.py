@@ -1,7 +1,7 @@
 from llama_cpp import Llama
 
 # Load the model (make sure the path is correct!)
-llm = Llama(model_path="models/llama-2-7b-chat.Q4_K_M.gguf")
+llm = Llama(model_path="models/meta-llama-3.1-8b-instruct-q4_0.gguf")
 
 # Example prompt
 prompt = "what is the meaning of life?"
