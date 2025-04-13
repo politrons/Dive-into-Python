@@ -6,6 +6,7 @@ app = Flask(__name__)
 # Load your model from here https://huggingface.co/ggml-org/Meta-Llama-3.1-8B-Instruct-Q4_0-GGUF/tree/main
 llm = Llama(model_path="models/meta-llama-3.1-8b-instruct-q4_0.gguf")
 
+
 @app.route('/')
 def home():
     return render_template('index.html')
