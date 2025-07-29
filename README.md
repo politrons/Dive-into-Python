@@ -22,3 +22,8 @@ Here we cover with examples the most famous features of [Python 3](https://www.p
 Using the library [pykka](https://pykka.readthedocs.io/en/stable/) we can reproduce the actor system model of Akka 
 in Python.
 * **[Actor model](com/politrons/features/ActorModel.py)**
+
+## Kafka
+
+* **[Producer/Consumer](com/politrons/kafka/KafkaFeature.py)**
+* **[Stream](com/politrons/kafka/KafkaStream.py)**
