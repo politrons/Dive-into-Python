@@ -16,7 +16,8 @@ Here we cover with examples the most famous features of [Python 3](https://www.p
 * **[Functions](com/politrons/features/Functions.py)**
 * **[Monads](com/politrons/features/Monads.py)**
 * **[Async](com/politrons/features/AsyncFeature.py)**
-  
+* **[Pattern matching](com/politrons/features/PatternMatching.py)**
+
 ## Actor model
 
 Using the library [pykka](https://pykka.readthedocs.io/en/stable/) we can reproduce the actor system model of Akka 
