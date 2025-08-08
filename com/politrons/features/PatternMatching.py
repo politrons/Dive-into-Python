@@ -61,7 +61,7 @@ class LogicInMatchCase:
     Pattern-matching playground for numeric business rules.
     """
 
-    def is_specific_logic(self, seq: list[int]) -> str | bool:
+    def calc_specific_logic(self, seq: list[int]) -> str | bool:
         """
         Evaluate a 3-element integer list against two custom rules.
 
@@ -85,7 +85,7 @@ class JsonScan:
     Micro event router that interprets tiny JSON-like dictionaries.
     """
 
-    def route(self, event: dict) -> str:
+    def scan(self, event: dict) -> str:
         """
         Translate an event dict into a log-style message.
 
@@ -116,11 +116,11 @@ if __name__ == '__main__':
     print(kingdom.touch(AnimalKingdom.Dog("warf")))
 
     logic = LogicInMatchCase()
-    print(logic.is_specific_logic([3, 5, 8]))
-    print(logic.is_specific_logic([4, 1, 2]))
+    print(logic.calc_specific_logic([3, 5, 8]))
+    print(logic.calc_specific_logic([4, 1, 2]))
 
     scanner = JsonScan()
-    print(scanner.route({"type": "user", "action": "login",  "id": 1000}))
-    print(scanner.route({"type": "user", "action": "logout", "id": 1000}))
-    print(scanner.route({"type": "system", "action": "login", "id": 1000}))
-    print(scanner.route({"type": "account_info", "username": "politron", "id": 1000}))
+    print(scanner.scan({"type": "user", "action": "login", "id": 1000}))
+    print(scanner.scan({"type": "user", "action": "logout", "id": 1000}))
+    print(scanner.scan({"type": "system", "action": "login", "id": 1000}))
+    print(scanner.scan({"type": "account_info", "username": "politron", "id": 1000}))
