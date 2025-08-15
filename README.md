@@ -28,3 +28,7 @@ in Python.
 
 * **[Producer/Consumer](com/politrons/kafka/KafkaFeature.py)**
 * **[Stream](com/politrons/kafka/KafkaStream.py)**
+
+## Patterns
+
+* **[Circuit breaker](com/politrons/patterns/CircuitBreaker.py)**
