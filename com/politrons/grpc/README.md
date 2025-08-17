@@ -24,6 +24,7 @@ The server:
 - Implements the `LoginUserServicer` base class generated from the proto.
 - Provides the logic for the `Login` method, building a `UserResponse` using the incoming `UserRequest`.
 - Runs a gRPC server, registers the implementation, and listens on a given port (e.g., `50051`).
+- Includes an **interceptor** that prints a message whenever an RPC is invoked, then continues execution normally. This allows you to add simple logging or cross-cutting concerns without changing the service logic.
 
 ---
 
@@ -38,12 +39,13 @@ The client:
 
 ## Run instructions
 1. Generate the Python stubs with `grpcio-tools` from the `user.proto`.
-2. Start the server process so it listens for incoming requests.
+2. Start the server process so it listens for incoming requests (with the interceptor attached).
 3. Run the client process, which will connect to the server and invoke the `Login` method.
 4. The client will print the response message received from the server.
 
 ---
 
 ## Expected behavior
-- **Server side:** logs the incoming request showing the user’s name.
+- **Interceptor:** logs the RPC method name whenever a call is made.
+- **Server side:** logs the incoming request showing the user’s name and builds the response.
 - **Client side:** prints a response like `User info: Politrons, Pablo logged!`.
