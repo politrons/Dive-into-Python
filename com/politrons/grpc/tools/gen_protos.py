@@ -12,7 +12,7 @@ def main() -> None:
         f"-I{PROTO_DIR}",              # include path
         f"--python_out={PROTO_DIR}",   # messages
         f"--grpc_python_out={PROTO_DIR}",  # stubs
-        str(PROTO_DIR / "hello.proto"),
+        str(PROTO_DIR / "user.proto"),
     ]
     protoc.main(args)
     print("Generated hello_pb2.py and hello_pb2_grpc.py")
