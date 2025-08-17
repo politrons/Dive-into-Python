@@ -32,3 +32,7 @@ in Python.
 ## Patterns
 
 * **[Circuit breaker](com/politrons/patterns/CircuitBreaker.py)**
+
+## gRPC
+
+* **[proto/client/server](com/politrons/grpc)**
