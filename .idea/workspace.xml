@@ -5,8 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8be487bd-795f-4553-99bf-91d578dccde6" name="Default Changelist" comment="IO Monad">
+      <change afterPath="$PROJECT_DIR$/com/politrons/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/com/politrons/features/PyIOEffectExample.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/com/politrons/pyio-effect/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/com/politrons/pyio-effect/MANIFEST.in" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/com/politrons/pyio-effect/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/com/politrons/pyio-effect/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/com/politrons/pyio-effect/pyproject.toml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/com/politrons/pyio-effect/src/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/com/politrons/pyio-effect/src/pyio_effect/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/com/politrons/pyio-effect/src/test/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/com/politrons/pyio-effect/src/test/core_test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/com/politrons/monads/IOMonad.py" beforeDir="false" afterPath="$PROJECT_DIR$/com/politrons/monads/IOMonad.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/com/politrons/monads/IOMonad.py" beforeDir="false" afterPath="$PROJECT_DIR$/com/politrons/pyio-effect/src/pyio_effect/core.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/bin/pip" beforeDir="false" afterPath="$PROJECT_DIR$/venv/bin/pip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/bin/pip3" beforeDir="false" afterPath="$PROJECT_DIR$/venv/bin/pip3" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -157,10 +171,14 @@
     "Python.Monads.executor": "Run",
     "Python.PatternMatching.executor": "Run",
     "Python.PyIO.executor": "Run",
+    "Python.PyIOEffectExample.executor": "Run",
     "Python.StaticType.executor": "Run",
     "Python.app.server.executor": "Run",
     "Python.chat_gpt.executor": "Run",
     "Python.client.executor": "Run",
+    "Python.core (1).executor": "Run",
+    "Python.core.executor": "Run",
+    "Python.core_test.executor": "Run",
     "Python.gen_protos.executor": "Run",
     "Python.server.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -168,7 +186,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/pablogarcia/Development/Dive-into-Python/com/politrons/grpc/src/app/protos",
+    "last_opened_file_path": "/Users/pablogarcia/Development/Dive-into-Python/com/politrons/pyio-effect/src/pyio_effect",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -183,17 +201,21 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/com/politrons/pyio-effect/src/pyio_effect" />
+      <recent name="$PROJECT_DIR$/com/politrons/pyio-effect/src" />
       <recent name="$PROJECT_DIR$/com/politrons/grpc/src/app/protos" />
       <recent name="$PROJECT_DIR$/com/politrons/ai/models" />
       <recent name="$PROJECT_DIR$/com/politrons" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/com/politrons/pyio-effect/src/test" />
+      <recent name="$PROJECT_DIR$/com/politrons/pyio-effect/src/pyio-effect" />
       <recent name="$PROJECT_DIR$/com/politrons/ai" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/com/politrons/features" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.IOMonad">
+  <component name="RunManager" selected="Python.core_test">
     <configuration name="IOMonad" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="DiveIntoPython" />
       <option name="ENV_FILES" value="" />
@@ -240,7 +262,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="PatternMatching" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="PyIOEffectExample" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="DiveIntoPython" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -253,7 +275,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/com/politrons/features/PatternMatching.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/com/politrons/features/PyIOEffectExample.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -285,7 +307,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="app.server" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="core (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="DiveIntoPython" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -294,33 +316,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/com/politrons/grpc" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/com/politrons/pyio-effect/src/pyio_effect" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="app.server" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="true" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="client" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="DiveIntoPython" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/com/politrons/grpc/src/app" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/com/politrons/grpc/src/app/client.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/com/politrons/pyio-effect/src/pyio_effect/core.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -329,7 +329,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="gen_protos" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="core" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="DiveIntoPython" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -338,12 +338,34 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/com/politrons/grpc" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/com/politrons/pyio-effect/src/pyio-effect" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/com/politrons/grpc/tools/gen_protos.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/com/politrons/pyio-effect/src/pyio-effect/core.py" />
       <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="core_test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="DiveIntoPython" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/com/politrons/pyio-effect/src/test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/com/politrons/pyio-effect/src/test/core_test.py" />
+      <option name="PARAMETERS" value="-s" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
@@ -355,18 +377,18 @@
       <item itemvalue="Python.StaticType" />
       <item itemvalue="Python.LlamaModel" />
       <item itemvalue="Python.IOMonad" />
-      <item itemvalue="Python.client" />
-      <item itemvalue="Python.app.server" />
-      <item itemvalue="Python.gen_protos" />
-      <item itemvalue="Python.PatternMatching" />
+      <item itemvalue="Python.PyIOEffectExample" />
+      <item itemvalue="Python.core" />
+      <item itemvalue="Python.core (1)" />
+      <item itemvalue="Python.core_test" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.core_test" />
+        <item itemvalue="Python.PyIOEffectExample" />
+        <item itemvalue="Python.core (1)" />
+        <item itemvalue="Python.core" />
         <item itemvalue="Python.IOMonad" />
-        <item itemvalue="Python.client" />
-        <item itemvalue="Python.app.server" />
-        <item itemvalue="Python.gen_protos" />
-        <item itemvalue="Python.PatternMatching" />
       </list>
     </recent_temporary>
   </component>
@@ -671,7 +693,23 @@
       <option name="project" value="LOCAL" />
       <updated>1755508228649</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="IO Monad">
+      <option name="closed" value="true" />
+      <created>1755534832203</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1755534832203</updated>
+    </task>
+    <task id="LOCAL-00038" summary="IO Monad">
+      <option name="closed" value="true" />
+      <created>1755534981507</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1755534981507</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="ToolWindowManager">

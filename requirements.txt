@@ -3,3 +3,4 @@ testcontainers~=4.12.0
 confluent-kafka~=2.11.0
 OSlash~=0.6.3
 pykka~=4.2.0
+pyio-effect==0.1.3
