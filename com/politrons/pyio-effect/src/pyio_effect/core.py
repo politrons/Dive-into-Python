@@ -87,16 +87,29 @@ class PyIO(Generic[T]):
                 return PyIO[U](None, ex)
         return self
 
+    def is_success(self) -> bool:
+        return self._error is None
+
+    def is_error(self) -> bool:
+        return self._error is not None
+
+    def is_empty(self) -> bool:
+        return self._value is None
+
     def get(self) -> T:
         # Unsafe extract: if there is a captured error, raise it now
         if self._error is not None:
             raise self._error
         return self._value
 
+    def failed(self) -> BaseException:
+        return self._error
+
     def get_or_else(self, default: T) -> T:
         # Safe extract with default if failed or value is None
         if self._error is not None or self._value is None:
             return default
         return self._value
+
 
 

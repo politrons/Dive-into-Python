@@ -30,6 +30,7 @@ if __name__ == "__main__":
     Starting with None -> behaves like empty success; [get_or_else] recovers
     """
     pyio = PyIO[str](None)
+    print(f"is empty? {pyio.is_empty()}")
     content = (pyio
                .map(lambda s: s.upper())  # skipped (value is None)
                .flat_map(lambda s: PyIO[str](s + "!!!"))  # skipped
@@ -46,6 +47,13 @@ if __name__ == "__main__":
                .on_error(lambda ex: print(f"We have a side-effect because. {ex}"))
                .get_or_else(42))  # recover at the edge
     print(content)
+
+    pyio = PyIO[int](10)
+    content = (pyio
+               .map(lambda n: n // 0)  # raises ZeroDivisionError -> captured
+               .flat_map(lambda n: PyIO[int](n * 2)))  # not executed (failure propagates)
+    print(content.is_error())
+    print(content.is_success())
 
     """
     Failure injected by a side-effect (division by zero), then use [recover] to control side-effect and 

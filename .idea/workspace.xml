@@ -5,22 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8be487bd-795f-4553-99bf-91d578dccde6" name="Default Changelist" comment="IO Monad">
-      <change afterPath="$PROJECT_DIR$/com/politrons/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/com/politrons/features/PyIOEffectExample.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/com/politrons/pyio-effect/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/com/politrons/pyio-effect/MANIFEST.in" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/com/politrons/pyio-effect/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/com/politrons/pyio-effect/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/com/politrons/pyio-effect/pyproject.toml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/com/politrons/pyio-effect/src/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/com/politrons/pyio-effect/src/pyio_effect/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/com/politrons/pyio-effect/src/test/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/com/politrons/pyio-effect/src/test/core_test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/com/politrons/monads/IOMonad.py" beforeDir="false" afterPath="$PROJECT_DIR$/com/politrons/pyio-effect/src/pyio_effect/core.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/bin/pip" beforeDir="false" afterPath="$PROJECT_DIR$/venv/bin/pip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/bin/pip3" beforeDir="false" afterPath="$PROJECT_DIR$/venv/bin/pip3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/com/politrons/pyio-effect/src/pyio_effect/core.py" beforeDir="false" afterPath="$PROJECT_DIR$/com/politrons/pyio-effect/src/pyio_effect/core.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/com/politrons/pyio-effect/src/test/core_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/com/politrons/pyio-effect/src/test/core_test.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -195,7 +182,7 @@
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.43498272",
-    "settings.editor.selected.configurable": "com.intellij.pycharm.community.ide.impl.configuration.PythonContentEntriesConfigurable",
+    "settings.editor.selected.configurable": "project.propDebugger",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -215,7 +202,7 @@
       <recent name="$PROJECT_DIR$/com/politrons/features" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.core_test">
+  <component name="RunManager" selected="Python.core (1)">
     <configuration name="IOMonad" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="DiveIntoPython" />
       <option name="ENV_FILES" value="" />
@@ -384,9 +371,9 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.core (1)" />
         <item itemvalue="Python.core_test" />
         <item itemvalue="Python.PyIOEffectExample" />
-        <item itemvalue="Python.core (1)" />
         <item itemvalue="Python.core" />
         <item itemvalue="Python.IOMonad" />
       </list>
@@ -709,7 +696,23 @@
       <option name="project" value="LOCAL" />
       <updated>1755534981507</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="IO Monad">
+      <option name="closed" value="true" />
+      <created>1755543595084</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1755543595084</updated>
+    </task>
+    <task id="LOCAL-00040" summary="IO Monad">
+      <option name="closed" value="true" />
+      <created>1755543691665</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1755543691665</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="ToolWindowManager">
