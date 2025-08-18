@@ -1,5 +1,15 @@
 from __future__ import annotations
+
+import concurrent
 from typing import TypeVar, Generic, Callable, Optional, Any
+import asyncio
+import random
+import threading
+import time
+import uuid
+from asyncio import Future
+from typing import Coroutine
+import concurrent.futures
 
 # Define a generic type variable
 T = TypeVar("T")
@@ -69,6 +79,31 @@ class PyIO(Generic[T]):
             return PyIO[U](func(self._value))
         return self
 
+    def on_parallel(
+            self,
+            func_1: Callable[[T], U],
+            func_2: Callable[[T], U],
+            merge_func: Callable[[U, U], U],
+            max_workers: int | None = None
+    ) -> "PyIO[U]":
+        """
+        Run func_1 and func_2 concurrently, then merge their results.
+        """
+        if self._error is not None or self._value is None:
+            return self
+        try:
+            with concurrent.futures.ThreadPoolExecutor(
+                max_workers=max_workers
+            ) as ex:
+                fut1 = ex.submit(func_1, self._value)
+                fut2 = ex.submit(func_2, self._value)
+                res1, res2 = fut1.result(), fut2.result()
+
+            return PyIO(merge_func(res1, res2))
+
+        except BaseException as ex:
+            return PyIO(None, ex)
+
     def on_error(self, func: Callable[[BaseException], None]) -> "PyIO[T]":
         # If already failed, we execute the consumer function provided
         if self._error is not None:
@@ -110,6 +145,3 @@ class PyIO(Generic[T]):
         if self._error is not None or self._value is None:
             return default
         return self._value
-
-
-
