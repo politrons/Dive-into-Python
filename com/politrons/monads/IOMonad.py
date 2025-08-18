@@ -96,7 +96,9 @@ class PyIO(Generic[T]):
 
 # ----------------------------- Main ---------------------------------
 if __name__ == "__main__":
-    # Success path (matches your original behavior)
+    """
+    Success path with [map] and [flat_map]
+    """
     pyio = PyIO[str]("Hello world")
     content = (pyio
                .map(lambda s: s.upper())  # side-effect captured if it throws
@@ -105,7 +107,9 @@ if __name__ == "__main__":
                .get())
     print(content)
 
-    # Another success path with filter
+    """
+    Another success path with [filter]
+    """
     pyio = PyIO[int](10)
     content = (pyio
                .map(lambda n: n + 100)
@@ -115,7 +119,7 @@ if __name__ == "__main__":
     print(content)
 
     """
-    Starting with None -> behaves like empty success; get_or_else recovers
+    Starting with None -> behaves like empty success; [get_or_else] recovers
     """
     pyio = PyIO[str](None)
     content = (pyio
@@ -160,7 +164,7 @@ content = (pyio
 print(content)
 
 """
-When operator receive two functions, one predicate that is used to filter if the second function passed is executed or not.
+[when] operator receive two functions, one predicate that is used to filter if the second function passed is executed or not.
 """
 pyio = PyIO[int](15)
 content = (pyio
