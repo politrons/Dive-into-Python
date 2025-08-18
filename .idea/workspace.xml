@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8be487bd-795f-4553-99bf-91d578dccde6" name="Default Changelist" comment="IO Monad" />
+    <list default="true" id="8be487bd-795f-4553-99bf-91d578dccde6" name="Default Changelist" comment="IO Monad">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/com/politrons/monads/IOMonad.py" beforeDir="false" afterPath="$PROJECT_DIR$/com/politrons/monads/IOMonad.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -660,7 +663,15 @@
       <option name="project" value="LOCAL" />
       <updated>1755467976622</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="IO Monad">
+      <option name="closed" value="true" />
+      <created>1755508228649</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1755508228649</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="ToolWindowManager">
