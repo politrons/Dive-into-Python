@@ -1,153 +1,240 @@
-# PyIO - Python Effects System
+# PyF Collection
 
-A lightweight monadic effects system for Python that provides safe error handling and functional composition. PyIO wraps values and exceptions, allowing you to chain operations without explicit error checking at each step.
-
-## Overview
-
-PyIO acts like a `Try` type - it can hold either a successful value or a captured exception. Operations are automatically skipped if a previous step failed, and errors propagate through the chain until handled.
-
-## Core Concept
-
-```python
-from pyio import PyIO
-
-# Success case
-result = PyIO("hello").map(str.upper).get()  # "HELLO"
-
-# Error case - division by zero is captured and propagated
-result = PyIO(10).map(lambda x: x // 0).get_or_else(42)  # 42
-```
-
-## Operators
-
-### Transformation Operators
-
-- **`map(func)`** - Transform the value if successful, capture any exceptions thrown by `func`
-- **`flat_map(func)`** - Transform with a function that returns a PyIO, flatten the result
-- **`filter(predicate)`** - Keep value only if predicate returns True, otherwise become empty
-
-### Recovery Operators
-
-- **`recover(func)`** - Handle errors by providing a recovery function that takes the exception
-- **`recover_with(func)`** - Handle errors with a function that returns a PyIO
-
-### Conditional Operators
-
-- **`when(predicate, func)`** - Apply `func` only if `predicate` returns True
-
-### Parallel Processing Operators
-
-- **`on_parallel(func_1, func_2, merge_func, max_workers=None)`** - Run two functions concurrently on the same value, then merge their results using `merge_func`
-
-### Side-Effect Operators
-
-- **`on_success(func)`** - Execute a side-effect function if the PyIO contains a value
-- **`on_error(func)`** - Execute a side-effect function if the PyIO contains an error
-
-### State Inspection Operators
-
-- **`is_success()`** - Returns True if the PyIO contains a value and no error
-- **`is_error()`** - Returns True if the PyIO contains an error
-- **`is_empty()`** - Returns True if the PyIO's value is None
-
-### Extraction Operators
-
-- **`get()`** - Extract the value (unsafe - throws if there was an error)
-- **`get_or_else(default)`** - Extract the value or return default if error/None
-- **`failed()`** - Extract the captured exception (returns the BaseException)
-
-## Usage Examples
-
-### Basic Chaining
-```python
-result = (PyIO("hello world")
-          .map(str.upper)
-          .map(lambda s: s + "!!!")
-          .get())  # "HELLO WORLD!!!"
-```
-
-### Error Handling
-```python
-result = (PyIO(10)
-          .map(lambda x: x // 0)  # ZeroDivisionError captured
-          .recover(lambda ex: 999)  # Recover with default value
-          .map(lambda x: x * 2)
-          .get())  # 1998
-```
-
-### Conditional Processing
-```python
-result = (PyIO(15)
-          .when(lambda n: n > 10, lambda n: n * 100)
-          .get())  # 1500
-```
-
-### Parallel Processing
-```python
-import time
-
-def slow_double(x):
-    time.sleep(1)
-    return x * 2
-
-def slow_square(x):
-    time.sleep(1)
-    return x ** 2
-
-result = (PyIO(5)
-          .on_parallel(
-              slow_double,    # 5 * 2 = 10
-              slow_square,    # 5 ** 2 = 25
-              lambda a, b: a + b,  # 10 + 25 = 35
-              max_workers=2
-          )
-          .get())  # 35 (computed in ~1 second instead of 2)
-```
-
-### State Inspection
-```python
-# Check if computation was successful
-pyio_value = PyIO(42).map(lambda x: x * 2)
-if pyio_value.is_success():
-    print(f"Success: {pyio_value.get()}")
-
-# Check for errors
-pyio_error = PyIO(10).map(lambda x: x // 0)
-if pyio_error.is_error():
-    print(f"Error occurred: {pyio_error.failed()}")
-
-# Check if value is None
-empty_pyio = PyIO(None)
-if empty_pyio.is_empty():
-    print("Value is None")
-```
-
-### Side Effects
-```python
-result = (PyIO("processing data")
-          .on_success(lambda msg: print(f"LOG: {msg}"))  # Prints log message
-          .map(str.upper)
-          .on_success(lambda msg: print(f"RESULT: {msg}"))  # Prints result
-          .get())
-```
-
-### Error Side Effects
-```python
-result = (PyIO(10)
-          .map(lambda x: x // 0)  # This will fail
-          .on_error(lambda ex: print(f"Error logged: {type(ex).__name__}"))
-          .recover(lambda ex: 0)
-          .get())  # 0
-```
+A Python library that brings functional programming collection operations to Python, inspired by monadic operations from languages like Scala and Haskell.
 
 ## Installation
 
-Simply copy the `pyio.py` file to your project directory and import:
+```bash
+pip install pyf-collection
+```
+
+## Overview
+
+PyFCollection is a generic collection wrapper that provides a fluent API for functional programming operations on iterables. It allows you to chain operations like `map`, `filter`, `fold`, and more in a clean, readable way.
+
+## Quick Start
 
 ```python
-from pyio import PyIO
+from pyf_collection import PyFCollection
+
+# Create a collection
+numbers = PyFCollection([1, 2, 3, 4, 5])
+
+# Chain operations
+result = (numbers
+    .map(lambda x: x * 2)
+    .filter(lambda x: x > 4)
+    .to_list())
+
+print(list(result))  # [6, 8, 10]
 ```
+
+## API Reference
+
+### Constructor
+
+#### `PyFCollection(content: Optional[collections.Iterable[T]])`
+
+Creates a new PyFCollection instance.
+
+```python
+# From a list
+collection = PyFCollection([1, 2, 3])
+
+# From any iterable
+collection = PyFCollection(range(5))
+
+# Empty collection
+collection = PyFCollection(None)
+```
+
+### Transformation Operations
+
+#### `map(func: Callable[[T], U]) -> PyFCollection[U]`
+
+Transforms each element in the collection using the provided function.
+
+```python
+numbers = PyFCollection([1, 2, 3])
+doubled = numbers.map(lambda x: x * 2)
+print(list(doubled.to_list()))  # [2, 4, 6]
+
+# Transform to different type
+words = PyFCollection(["hello", "world"])
+lengths = words.map(len)
+print(list(lengths.to_list()))  # [5, 5]
+```
+
+#### `flat_map(func: Callable[[T], PyFCollection[U]]) -> PyFCollection[U]`
+
+Maps each element to a PyFCollection and flattens the results.
+
+```python
+words = PyFCollection(["hello", "world"])
+chars = words.flat_map(lambda word: PyFCollection(list(word)))
+print(list(chars.to_list()))  # ['h', 'e', 'l', 'l', 'o', 'w', 'o', 'r', 'l', 'd']
+
+# Expand numbers
+numbers = PyFCollection([1, 2, 3])
+expanded = numbers.flat_map(lambda x: PyFCollection([x, x * 10]))
+print(list(expanded.to_list()))  # [1, 10, 2, 20, 3, 30]
+```
+
+### Filtering Operations
+
+#### `filter(func: Callable[[T], bool]) -> PyFCollection[T]`
+
+Keeps only elements that satisfy the predicate function.
+
+```python
+numbers = PyFCollection([1, 2, 3, 4, 5, 6])
+evens = numbers.filter(lambda x: x % 2 == 0)
+print(list(evens.to_list()))  # [2, 4, 6]
+```
+
+#### `distinct(dis: T) -> PyFCollection[T]`
+
+Removes all occurrences of the specified element.
+
+```python
+numbers = PyFCollection([1, 2, 2, 3, 2, 4])
+without_twos = numbers.distinct(2)
+print(list(without_twos.to_list()))  # [1, 3, 4]
+```
+
+### Search Operations
+
+#### `find(func: Callable[[T], bool]) -> Optional[T]`
+
+Returns the first element that satisfies the predicate, or None if not found.
+
+```python
+numbers = PyFCollection([1, 2, 3, 4, 5])
+first_even = numbers.find(lambda x: x % 2 == 0)
+print(first_even)  # 2
+
+not_found = numbers.find(lambda x: x > 10)
+print(not_found)  # None
+```
+
+#### `exist(func: Callable[[T], bool]) -> bool`
+
+Returns True if any element satisfies the predicate.
+
+```python
+numbers = PyFCollection([1, 2, 3, 4, 5])
+has_even = numbers.exist(lambda x: x % 2 == 0)
+print(has_even)  # True
+
+has_large = numbers.exist(lambda x: x > 10)
+print(has_large)  # False
+```
+
+### Aggregation Operations
+
+#### `fold(acc: U, func: Callable[[U, T], U]) -> PyFCollection[U]`
+
+Reduces the collection to a single value using an accumulator function.
+
+```python
+numbers = PyFCollection([1, 2, 3, 4])
+sum_result = numbers.fold(0, lambda acc, x: acc + x)
+print(list(sum_result.to_list()))  # [10]
+
+# String concatenation
+words = PyFCollection(["Hello", " ", "World"])
+sentence = words.fold("", lambda acc, x: acc + x)
+print(list(sentence.to_list()))  # ["Hello World"]
+```
+
+### Slicing Operations
+
+#### `take(n: int) -> PyFCollection[T]`
+
+Returns a new collection with the first n elements.
+
+```python
+numbers = PyFCollection([1, 2, 3, 4, 5])
+first_three = numbers.take(3)
+print(list(first_three.to_list()))  # [1, 2, 3]
+```
+
+#### `drop(n: int) -> PyFCollection[T]`
+
+Returns a new collection without the first n elements.
+
+```python
+numbers = PyFCollection([1, 2, 3, 4, 5])
+without_first_two = numbers.drop(2)
+print(list(without_first_two.to_list()))  # [3, 4, 5]
+```
+
+#### `slice(n: int, m: int) -> PyFCollection[T]`
+
+Returns elements from index n to m (exclusive).
+
+```python
+numbers = PyFCollection([0, 1, 2, 3, 4, 5])
+middle = numbers.slice(2, 4)
+print(list(middle.to_list()))  # [2, 3]
+```
+
+### Output Operations
+
+#### `to_list() -> collections.Iterable[T]`
+
+Converts the collection back to its underlying iterable.
+
+```python
+collection = PyFCollection([1, 2, 3])
+result = collection.to_list()
+print(list(result))  # [1, 2, 3]
+```
+
+## Chaining Operations
+
+All operations return a new PyFCollection, allowing for fluent method chaining:
+
+```python
+result = (PyFCollection([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])
+    .filter(lambda x: x % 2 == 0)      # [2, 4, 6, 8, 10]
+    .map(lambda x: x * x)              # [4, 16, 36, 64, 100]
+    .take(3)                           # [4, 16, 36]
+    .map(lambda x: f"Value: {x}")      # ["Value: 4", "Value: 16", "Value: 36"]
+    .to_list())
+
+print(list(result))  # ["Value: 4", "Value: 16", "Value: 36"]
+```
+
+## Type Safety
+
+PyFCollection is fully typed using Python's type hints and generics, providing excellent IDE support and type checking:
+
+```python
+from typing import List
+
+# Type inference works correctly
+numbers: PyFCollection[int] = PyFCollection([1, 2, 3])
+strings: PyFCollection[str] = numbers.map(str)  # PyFCollection[str]
+```
+
+## Requirements
+
+- Python >= 3.9
+- typing support for generics
 
 ## License
 
-This project is open source. See the license file for details.
+MIT License
+
+## Author
+
+Pablo Picouto Garcia
+
+## Contributing
+
+Contributions are welcome! Please visit the [GitHub repository](https://github.com/politrons/Dive-into-Python) for more information.
+
+## Issues
+
+Report issues at: https://github.com/politrons/Dive-into-Python/issues
