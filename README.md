@@ -40,3 +40,14 @@ in Python.
 ## PyIO effect
 
 * **[PyIO-Effect](com/politrons/pyio-effect)**
+
+## PyFCollection 
+
+What is PyFCollection?
+A lightweight, generic collection class that provides:
+✅ Lazy evaluation - operations are deferred until materialization
+✅ Method chaining - fluent API for readable data pipelines
+✅ Type safety - full Generic type support
+✅ Zero dependencies - pure Python implementation
+
+* **[PyF-Collection](com/politrons/pyf-collection)**
