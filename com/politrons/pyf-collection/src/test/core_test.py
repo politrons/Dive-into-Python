@@ -4,23 +4,23 @@ from pyf_collection import PyFCollection
 
 if __name__ == "__main__":
     """map"""
-    list = (PyFCollection(["Hello", "world"])
+    resul1 = (PyFCollection(["Hello", "world"])
             .map(lambda s: s.upper())
             .to_list())
-    print(list)
+    print(resul1)
 
     """flatMap"""
-    list = (PyFCollection(["Hello", "functional", "world", "python"])
+    resul2 = (PyFCollection(["Hello", "functional", "world", "python"])
             .flat_map(lambda s: PyFCollection([f"-{s}-", f"${s}$"]))
             .to_list())
-    print(list)
+    print(resul2)
 
     """filter"""
-    list = (PyFCollection(["Hello", "functional", "world", "python"])
+    resul3 = (PyFCollection(["Hello", "functional", "world", "python"])
             .filter(lambda s: s != "python")
             .map(lambda s: s.upper())
             .to_list())
-    print(list)
+    print(resul3)
 
     """find"""
     exit = (PyFCollection(["Hello", "functional", "world", "python"])
@@ -28,37 +28,35 @@ if __name__ == "__main__":
     print(exit)
 
     """exist"""
-    list = (PyFCollection(["Hello", "functional", "world", "python"])
+    resul4 = (PyFCollection(["Hello", "functional", "world", "python"])
             .find(lambda s: s == "functional"))
-    print(list)
+    print(resul4)
 
     """fold"""
-    list = (PyFCollection([1, 2, 3, 4, 5])
-            .fold(0, lambda acc, n: acc + n)
-            .to_list())
-    print(list)
+    resul5 = (PyFCollection([1, 2, 3, 4, 5])
+            .fold(0, lambda acc, n: acc + n))
+    print(resul5)
 
     """take"""
-    list = (PyFCollection([1, 2, 3, 4, 5])
+    resul6 = (PyFCollection([1, 2, 3, 4, 5])
             .take(3)
             .to_list())
-    print(list)
+    print(resul6)
 
     """drop"""
-    list = (PyFCollection([1, 2, 3, 4, 5])
+    resul7 = (PyFCollection([1, 2, 3, 4, 5])
             .drop(3)
             .to_list())
-    print(list)
+    print(resul7)
 
     """distinct"""
-    list = (PyFCollection([1, 2, 3, 4, 5])
+    resul8 = (PyFCollection([1, 2, 3, 4, 5])
             .distinct(3)
             .to_list())
-    print(list)
+    print(resul8)
 
     """slice"""
-    list = (PyFCollection([1, 2, 3, 4, 5])
+    resul9 = (PyFCollection([1, 2, 3, 4, 5])
             .slice(2,4)
             .to_list())
-    print(list)
-
+    print(resul9)

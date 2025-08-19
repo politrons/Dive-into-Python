@@ -1,74 +1,66 @@
 from __future__ import annotations
 
-import collections
+from collections.abc import Iterable
 from typing import TypeVar, Generic, Callable, Optional
+from itertools import islice, chain
 
 # Define a generic type variable
 T = TypeVar("T")
 U = TypeVar("U")
 
-
 class PyFCollection(Generic[T]):
-
-    def __init__(self, content: Optional[collections.Iterable[T]]) -> None:
-        self._value: Optional[collections.Iterable[T]] = content if content is None else content
+    def __init__(self, source: Iterable[T]) -> None:
+        # just remember the iterable, don't convert to list
+        self._it: Iterable[T] = source
         self._acc = None
 
-    def map(self, func: Callable[[T], U]) -> "PyFCollection[U]":
-        map_list = []
-        for e in self._value:
-            map_list.append(func(e))
-        return PyFCollection(map_list)
+    def __iter__(self):
+        return iter(self._it)
 
-    def flat_map(self, func: Callable[[T], "PyFCollection[U]"]) -> "PyFCollection[U]":
-        map_list = []
-        for e in self._value:
-            for f in func(e).to_list():
-                map_list.append(f)
-        return PyFCollection(map_list)
+    def __repr__(self) -> str:  # zero side-effects
+        return f"<PyFCollection at 0x{id(self):x}>"
 
-    def filter(self, func: Callable[[T], bool]) -> "PyFCollection[U]":
-        filter_list = []
-        for e in self._value:
-            if func(e):
-                filter_list.append(e)
-        return PyFCollection(filter_list)
+    def map(self, fn: Callable[[T], U]) -> "PyFCollection[U]":
+        return PyFCollection(fn(x) for x in self._it)
+
+    def filter(self, pred: Callable[[T], bool]) -> "PyFCollection[T]":
+        return PyFCollection(x for x in self._it if pred(x))
+
+    def flat_map(self, fn: Callable[[T], Iterable[U]]) -> "PyFCollection[U]":
+        return PyFCollection(chain.from_iterable(fn(x) for x in self._it))
+
+    def distinct(self, value: T) -> "PyFCollection[T]":
+        return PyFCollection(x for x in self._it if x != value)
+
+    def take(self, n: int) -> "PyFCollection[T]":
+        return PyFCollection(islice(self._it, n))
 
     def find(self, func: Callable[[T], bool]) -> "Optional[U]":
-        for e in self._value:
+        for e in self._it:
             if func(e):
                 return e
         return None
 
     def exist(self, func: Callable[[T], bool]) -> bool:
-        for e in self._value:
+        for e in self._it:
             if func(e):
                 return True
         return False
 
-    def distinct(self, dis: T) -> "PyFCollection[U]":
-        filter_list = []
-        for e in self._value:
-            if e is not dis:
-                filter_list.append(e)
-        return PyFCollection(filter_list)
-
-    def fold(self, acc: U, func: Callable[[U, T], U]) -> "PyFCollection[U]":
+    def fold(self, acc: U, func: Callable[[U, T], U]) -> U:
         self._acc = acc
-        for e in self._value:
+        for e in self._it:
             acc = acc + func(self._acc, e)
-        return PyFCollection(acc)
-
-    def take(self, n: int) -> "PyFCollection[T]":
-        return PyFCollection(self._value[:n])
+        return acc
 
     def drop(self, n: int) -> "PyFCollection[T]":
-        return PyFCollection(self._value[n:])
+        return PyFCollection(self._it[n:])
 
-    def slice(self, n:int, m:int) -> "PyFCollection[U]":
-        return PyFCollection(self._value[n:m])
+    def slice(self, n: int, m: int) -> "PyFCollection[U]":
+        return PyFCollection(self._it[n:m])
 
-    def to_list(self) -> collections.Iterable[T]:
-        return self._value
+    def to_list(self) -> list[T]:
+        return list(self._it)
+
 
 
