@@ -42,5 +42,5 @@ if __name__ == "__main__":
     print_type(u)
     print_type(p)
     print_type(s)
-    # print_type(Foo("")) # Not compiling
+    # print_type(Foo("")) # Not compiling with mypy
 
