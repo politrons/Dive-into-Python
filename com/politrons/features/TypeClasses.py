@@ -26,6 +26,10 @@ class String:
     def name(self) -> str:
         return f"String({self.x})"
 
+class Foo:
+    def __init__(self, x: str):
+        self.x = x
+
 # A generic function that works with anything that has "name"
 def print_type(t: TypeClass) -> None:
     print(t.name())
@@ -38,3 +42,5 @@ if __name__ == "__main__":
     print_type(u)
     print_type(p)
     print_type(s)
+    # print_type(Foo("")) # Not compiling
+
