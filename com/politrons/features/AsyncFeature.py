@@ -4,6 +4,7 @@ import threading
 import time
 import uuid
 from asyncio import Future
+from time import sleep
 from typing import Coroutine
 import concurrent.futures
 
@@ -77,9 +78,35 @@ def func_parallel() -> str:
     return uuid.uuid4().hex
 
 
+def loop_feature():
+    """
+    Create an vem loop thread where to execute a loop task that never ends.
+    """
+    loop = asyncio.new_event_loop()
+    my_thread = threading.Thread(target=_run_loop, args=(loop,), daemon=True)
+    my_thread.start()
+
+    asyncio.run_coroutine_threadsafe(_async_task(), loop)
+    print("Waiting for the task to finish....")
+    sleep(5)
+
+
+def _run_loop(_loop):
+    # Dedicated event loop for an endless task
+    asyncio.set_event_loop(_loop)
+    _loop.run_forever()
+
+
+async def _async_task():
+    while True:
+        print("Hello Async world")
+        await asyncio.sleep(1)
+
+
 if __name__ == "__main__":
     """Run the async function"""
     asyncio.run(async_await())
     asyncio.run(gather())
     asyncio.run(composition())
     parallel_feature()
+    loop_feature()
