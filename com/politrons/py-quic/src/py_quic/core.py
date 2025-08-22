@@ -14,7 +14,6 @@ from aioquic.quic.events import HandshakeCompleted, StreamDataReceived
 
 ALPN = ["echo"]
 
-
 # ----------------------------- Protocols -----------------------------
 
 class QuicServerProtocol(QuicConnectionProtocol):
