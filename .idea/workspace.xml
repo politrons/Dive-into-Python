@@ -5,7 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8be487bd-795f-4553-99bf-91d578dccde6" name="Default Changelist" comment="Quic">
-      <change beforePath="$PROJECT_DIR$/com/politrons/py-quic/src/test/QuicCoreTest.py" beforeDir="false" afterPath="$PROJECT_DIR$/com/politrons/py-quic/src/test/QuicCoreTest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/com/politrons/py-quic/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/com/politrons/py-quic/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -211,7 +212,7 @@
       <recent name="$PROJECT_DIR$/com/politrons/ai" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.QuicCoreTest">
+  <component name="RunManager" selected="Python.QuicCorePerfTest">
     <configuration name="LlamaModel" type="PythonConfigurationType" factoryName="Python">
       <module name="DiveIntoPython" />
       <option name="ENV_FILES" value="" />
@@ -380,8 +381,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.QuicCoreTest" />
         <item itemvalue="Python.QuicCorePerfTest" />
+        <item itemvalue="Python.QuicCoreTest" />
         <item itemvalue="Python.core" />
         <item itemvalue="Python.QuicClient" />
         <item itemvalue="Python.QuicServer" />
@@ -464,22 +465,6 @@
       <option name="presentableId" value="LOCAL-00008" />
       <option name="project" value="LOCAL" />
       <updated>1625781860585</updated>
-    </task>
-    <task id="LOCAL-00019" summary="kafka stream">
-      <option name="closed" value="true" />
-      <created>1753653875876</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1753653875876</updated>
-    </task>
-    <task id="LOCAL-00020" summary="kafka stream">
-      <option name="closed" value="true" />
-      <created>1753774973815</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1753774973815</updated>
     </task>
     <task id="LOCAL-00021" summary="pattern matching">
       <option name="closed" value="true" />
@@ -793,7 +778,23 @@
       <option name="project" value="LOCAL" />
       <updated>1755868003967</updated>
     </task>
-    <option name="localTasksCounter" value="60" />
+    <task id="LOCAL-00060" summary="Quic">
+      <option name="closed" value="true" />
+      <created>1755868082279</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1755868082279</updated>
+    </task>
+    <task id="LOCAL-00061" summary="Quic">
+      <option name="closed" value="true" />
+      <created>1755868120068</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1755868120068</updated>
+    </task>
+    <option name="localTasksCounter" value="62" />
     <servers />
   </component>
   <component name="ToolWindowManager">
