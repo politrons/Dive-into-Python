@@ -24,8 +24,6 @@ class QuicServerProtocol(QuicConnectionProtocol):
             case HandshakeCompleted():
                 pass  # nothing special to do on server handshake
             case StreamDataReceived(stream_id=stream_id, data=data, end_stream=end_stream):
-                # Avoid heavy prints in production if you care about throughput
-                print("[server] got:", data.decode(errors="replace"))
                 self._quic.send_stream_data(stream_id, data, end_stream=end_stream)
                 self.transmit()
             case _:
@@ -33,34 +31,49 @@ class QuicServerProtocol(QuicConnectionProtocol):
 
 
 class QuicClientProtocol(QuicConnectionProtocol):
-    """
-    Persistent client protocol:
-    - Opens one long-lived bidirectional stream after handshake.
-    - Exposes 'ready' to signal when the stream is available.
-    - Provides 'send_data' to push bytes on that persistent stream.
-    """
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
         self.ready = asyncio.Event()
-        self._tx_stream_id: int | None = None
+        self._tx_stream_id: int | None = None  # unused with per-request streams, but harmless
+        # --- NEW: pending requests by stream_id + per-stream buffers ---
+        self._pending: dict[int, asyncio.Future[bytes]] = {}
+        self._buffers: dict[int, bytearray] = {}
 
     def quic_event_received(self, event):
         match event:
             case HandshakeCompleted():
-                # One persistent stream for the DSL traffic
-                self._tx_stream_id = self._quic.get_next_available_stream_id()
+                # Connection is ready; no need to pre-open a stream for this approach
                 self.ready.set()
+
             case StreamDataReceived(stream_id=stream_id, data=data, end_stream=end_stream):
-                # Demo: print echoes; remove for performance
-                print("[client] echo:", data.decode(errors="replace"))
+                # Accumulate data per stream until end_stream, then fulfill the matching Future
+                buf = self._buffers.setdefault(stream_id, bytearray())
+                buf.extend(data)
+                if end_stream:
+                    fut = self._pending.pop(stream_id, None)
+                    body = bytes(buf)
+                    self._buffers.pop(stream_id, None)
+                    if fut and not fut.done():
+                        fut.set_result(body)
+
             case _:
                 pass
 
-    def send_data(self, message: bytes, *, end_stream: bool = False) -> None:
-        if self._tx_stream_id is None:
-            raise RuntimeError("QUIC stream not ready yet")
-        self._quic.send_stream_data(self._tx_stream_id, message, end_stream=end_stream)
+    # --- NEW: fire a request on its own bidirectional stream and return a Future[bytes] ---
+    def start_request(self, payload: bytes, *, end_stream: bool = True) -> asyncio.Future[bytes]:
+        """
+        Open a new bidirectional stream, send payload, and return a Future that resolves
+        with the echoed response bytes when the server closes the stream.
+        Must be called on the connection's event loop.
+        """
+        loop = asyncio.get_running_loop()
+        stream_id = self._quic.get_next_available_stream_id()
+        fut: asyncio.Future[bytes] = loop.create_future()
+        self._pending[stream_id] = fut
+        self._buffers[stream_id] = bytearray()
+        self._quic.send_stream_data(stream_id, payload, end_stream=end_stream)
         self.transmit()
+        return fut
 
 
 # ----------------------------- DSL: Server -----------------------------
@@ -223,12 +236,29 @@ class PyQuicClient:
         self._loop.run_forever()
 
     # ---- public API ----
-    def send_message(self, message: str, *, end_stream: bool = False) -> None:
+    def send_message(self, message: str, *, timeout: float | None = None):
+        """
+        Send a message over a fresh QUIC stream and return a concurrent.futures.Future[str]
+        that resolves with the echoed response. Call .result() to block if needed.
+        """
         if not self._loop or not self._protocol:
             raise RuntimeError("Client not started")
         data = message.encode()
-        fut = asyncio.run_coroutine_threadsafe(self._async_send(data, end_stream=end_stream), self._loop)
-        fut.result()  # wait to propagate errors (remove if you want fire-and-forget)
+        return asyncio.run_coroutine_threadsafe(
+            self._async_request(data, timeout=timeout),
+            self._loop,
+        )
+
+    # ---- internals (async, run in background loop) ----
+    async def _async_request(self, data: bytes, *, timeout: float | None) -> str:
+        assert self._protocol is not None
+        fut_bytes = self._protocol.start_request(data, end_stream=True)  # end stream so server mirrors it
+        if timeout is not None:
+            body = await asyncio.wait_for(fut_bytes, timeout)
+        else:
+            body = await fut_bytes
+        return body.decode(errors="replace")
+
 
     # ---- internals (async, run in background loop) ----
     async def _async_connect(self) -> None:

@@ -1,7 +1,8 @@
+# Bootstrap import for src/ layout
+import pathlib
+import sys
 import time
 
-# Bootstrap import for src/ layout
-import sys, pathlib
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parents[1]))
 
 from py_quic import PyQuicClient, PyQuicServer
@@ -24,7 +25,8 @@ if __name__ == "__main__":
               .insecure()  # dev only (self-signed certs)
               .start())
 
-    client.send_message("Hello over QUIC!")
-    client.send_message("How you doing?")
-    time.sleep(2)
+    fut1 = client.send_message("Hello over QUIC!")
+    fut2 = client.send_message("How you doing?")
+    print(fut1.result())
+    print(fut2.result())
     client.close()

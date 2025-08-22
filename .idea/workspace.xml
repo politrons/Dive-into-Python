@@ -5,15 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8be487bd-795f-4553-99bf-91d578dccde6" name="Default Changelist" comment="Quic">
-      <change afterPath="$PROJECT_DIR$/com/politrons/py-quic/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/com/politrons/py-quic/MANIFEST.in" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/com/politrons/py-quic/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/com/politrons/py-quic/pyproject.toml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/com/politrons/py-quic/src/py_quic/QuicCore.py" beforeDir="false" afterPath="$PROJECT_DIR$/com/politrons/py-quic/src/py_quic/core.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/com/politrons/py-quic/src/py_quic/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/com/politrons/py-quic/src/py_quic/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/com/politrons/py-quic/src/py_quic/core.py" beforeDir="false" afterPath="$PROJECT_DIR$/com/politrons/py-quic/src/py_quic/core.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/com/politrons/py-quic/src/test/QuicCoreTest.py" beforeDir="false" afterPath="$PROJECT_DIR$/com/politrons/py-quic/src/test/QuicCoreTest.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/com/politrons/py-quic/src/test/QuicServer.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -472,14 +466,6 @@
       <option name="project" value="LOCAL" />
       <updated>1625781860585</updated>
     </task>
-    <task id="LOCAL-00015" summary="Llama AI model">
-      <option name="closed" value="true" />
-      <created>1744010947235</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1744010947235</updated>
-    </task>
     <task id="LOCAL-00016" summary="Llama AI model">
       <option name="closed" value="true" />
       <created>1744012696509</created>
@@ -800,7 +786,15 @@
       <option name="project" value="LOCAL" />
       <updated>1755862429535</updated>
     </task>
-    <option name="localTasksCounter" value="56" />
+    <task id="LOCAL-00056" summary="Quic">
+      <option name="closed" value="true" />
+      <created>1755863648214</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1755863648214</updated>
+    </task>
+    <option name="localTasksCounter" value="57" />
     <servers />
   </component>
   <component name="ToolWindowManager">
