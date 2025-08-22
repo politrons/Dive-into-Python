@@ -1,0 +1,35 @@
+# pyproject.toml — build via setuptools, src/ layout
+[build-system]
+requires = ["setuptools>=67", "wheel", "build"]   # 'build' is for `python -m build`
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "py-quic"
+version = "0.1.4"
+description = "Quic client/server protocol wrapper for Python."
+readme = "README.md"
+requires-python = ">=3.10"                        # match/case requires Python 3.10+
+license = { file = "LICENSE" }
+authors = [{ name = "Pablo Picouto Garcia" }]
+keywords = ["quic", "http3", "udp", "asyncio", "networking"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Typing :: Typed"
+]
+dependencies = [
+  "aioquic"
+]
+# dependencies = ["typing-extensions>=4.8.0"]     # only needed if targeting <3.11 and using 'Self'
+
+[project.urls]
+Homepage = "https://github.com/politrons/Dive-into-Python"
+Issues    = "https://github.com/politrons/Dive-into-Python"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["py_quic*"]
+namespaces = false

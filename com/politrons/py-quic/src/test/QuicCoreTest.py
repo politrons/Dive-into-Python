@@ -1,41 +1,30 @@
-# QuicCoreTest.py
-# Comments are in English (as you asked).
-
-import argparse
 import time
 
+# Bootstrap import for src/ layout
+import sys, pathlib
+sys.path.insert(0, str(pathlib.Path(__file__).resolve().parents[1]))
 
-def _auto_insecure(host: str, server_name: str | None) -> bool:
-    """Enable insecure mode automatically for local dev when no server_name is provided."""
-    if server_name:
-        # If SNI is explicitly set, do not auto-disable verification
-        return False
-    h = (host or "").lower()
-    return h == "localhost" or h == "::1" or h.startswith("127.")
+from py_quic import PyQuicClient, PyQuicServer
 
 if __name__ == "__main__":
-    ap = argparse.ArgumentParser()
+    # Start server with a fluent DSL (no constructor args)
+    server = (PyQuicServer()
+              .with_host("127.0.0.1")
+              .with_port(4433)
+              .with_cert("cert.pem")
+              .with_key("key.pem")
+              .start())
 
-    ap.add_argument("--host", default="127.0.0.1")
-    ap.add_argument("--port", type=int, default=4433)
-    ap.add_argument("--cert", default="cert.pem")
-    ap.add_argument("--key", default="key.pem")
-    args = ap.parse_args()
-    server = QuicServer(args.host, args.port, args.cert, args.key)
+    time.sleep(0.5)  # small grace so the server binds
 
+    # Start client with a fluent DSL
+    client = (PyQuicClient()
+              .with_host("127.0.0.1")
+              .with_port(4433)
+              .insecure()  # dev only (self-signed certs)
+              .start())
 
-
-    server.start()
-
-    ap.add_argument("--server-name", default=None, help="SNI/hostname for TLS; e.g., 'localhost'")
-    ap.add_argument("--insecure", action="store_true", help="Disable TLS verification (self-signed)")
-    args = ap.parse_args()
-
-    # If you didn't pass --insecure in PyCharm and you're hitting localhost/127.0.0.1
-    # without a server_name, we assume dev mode and turn insecure on automatically.
-    effective_insecure = args.insecure or _auto_insecure(args.host, args.server_name)
-
-    client = QuicClient(args.host, args.port, effective_insecure, args.server_name)
     client.send_message("Hello over QUIC!")
-    client.send_message("how you doing?")
-    time.sleep(10)
+    client.send_message("How you doing?")
+    time.sleep(2)
+    client.close()

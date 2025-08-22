@@ -65,7 +65,7 @@ class QuicClientProtocol(QuicConnectionProtocol):
 
 # ----------------------------- DSL: Server -----------------------------
 
-class QuicServer:
+class PyQuicServer:
     """
     Fluent DSL (builder) for a QUIC echo server.
     Usage:
@@ -133,7 +133,7 @@ class QuicServer:
 
 # ----------------------------- DSL: Client -----------------------------
 
-class QuicClient:
+class PyQuicClient:
     """
     Fluent DSL (builder) for a persistent QUIC client.
     Usage:
@@ -252,28 +252,4 @@ class QuicClient:
         self._protocol.send_data(data, end_stream=end_stream)
 
 
-# ----------------------------- Demo (optional) -----------------------------
-
-if __name__ == "__main__":
-    # Start server with a fluent DSL (no constructor args)
-    server = (QuicServer()
-              .with_host("127.0.0.1")
-              .with_port(4433)
-              .with_cert("cert.pem")
-              .with_key("key.pem")
-              .start())
-
-    time.sleep(0.5)  # small grace so the server binds
-
-    # Start client with a fluent DSL
-    client = (QuicClient()
-              .with_host("127.0.0.1")
-              .with_port(4433)
-              .insecure()  # dev only (self-signed certs)
-              .start())
-
-    client.send_message("Hello over QUIC!")
-    client.send_message("How you doing?")
-    time.sleep(2)
-    client.close()
 
