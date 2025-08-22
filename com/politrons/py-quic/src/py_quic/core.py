@@ -1,10 +1,5 @@
-# quic_dsl.py
-# Comments are in English.
-
-import asyncio
 import ssl
 import threading
-import time
 from collections.abc import Callable
 from typing import Self
 
@@ -19,7 +14,6 @@ ALPN = ["echo"]
 
 # at top
 import asyncio
-import inspect
 
 
 class QuicServerProtocol(QuicConnectionProtocol):

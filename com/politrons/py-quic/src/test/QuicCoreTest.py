@@ -1,4 +1,3 @@
-# Bootstrap import for src/ layout
 import pathlib
 import sys
 import time
