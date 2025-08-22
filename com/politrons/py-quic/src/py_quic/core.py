@@ -5,6 +5,7 @@ import asyncio
 import ssl
 import threading
 import time
+from collections.abc import Callable
 from typing import Self
 
 from aioquic.asyncio import connect, serve
@@ -16,17 +17,58 @@ ALPN = ["echo"]
 
 # ----------------------------- Protocols -----------------------------
 
+# at top
+import asyncio
+import inspect
+
+
 class QuicServerProtocol(QuicConnectionProtocol):
-    # Echo server: read on a stream and write back to the same stream.
+    """
+    Server protocol that delegates business logic to an injected handler.
+
+    Handler signature:
+        handler(data: bytes, end_stream: bool) -> bytes | bytearray | str | Awaitable[bytes|bytearray|str]
+    If the handler returns None, no response is sent for that chunk.
+    """
+
+    def __init__(self, *args, handler: Callable[[bytes], bytes] = None, **kwargs):
+        super().__init__(*args, **kwargs)
+        # Default handler is identity (echo)
+        self._handler = handler
+
     def quic_event_received(self, event):
         match event:
             case HandshakeCompleted():
-                pass  # nothing special to do on server handshake
+                pass  # nothing to do
             case StreamDataReceived(stream_id=stream_id, data=data, end_stream=end_stream):
-                self._quic.send_stream_data(stream_id, data, end_stream=end_stream)
-                self.transmit()
+                # Offload to an async task so we can await (async handler or executor)
+                asyncio.get_running_loop().create_task(
+                    self._apply_handler_and_reply(stream_id, data, end_stream)
+                )
             case _:
                 pass
+
+    async def _apply_handler_and_reply(self, stream_id: int, data: bytes, end_stream: bool):
+        """Apply business handler and send its result back on the same stream."""
+        try:
+            loop = asyncio.get_running_loop()
+            result = await loop.run_in_executor(None, self._handler, data)
+
+            if result is None:
+                return  # no reply for this chunk
+
+            # Normalize to bytes
+            if not isinstance(result, (bytes, bytearray)):
+                result = str(result).encode()
+
+            # Send reply on same stream; mirror end_stream so client sees closure
+            self._quic.send_stream_data(stream_id, bytes(result), end_stream=end_stream)
+            self.transmit()
+
+        except Exception as exc:
+            # Optional: log/metrics; avoid raising inside protocol callback
+            # print(f"[server] handler error: {exc}")
+            pass
 
 
 class QuicClientProtocol(QuicConnectionProtocol):
@@ -78,25 +120,20 @@ class QuicClientProtocol(QuicConnectionProtocol):
 # ----------------------------- DSL: Server -----------------------------
 
 class PyQuicServer:
-    """
-    Fluent DSL (builder) for a QUIC echo server.
-    Usage:
-        server = (QuicServer()
-                    .with_host("127.0.0.1")
-                    .with_port(4433)
-                    .with_cert("cert.pem")
-                    .with_key("key.pem")
-                    .start())
-    """
     def __init__(self) -> None:
-        # Defaults; can be overridden via builder methods
         self.host: str = "127.0.0.1"
         self.port: int = 4433
         self.cert: str = "cert.pem"
         self.key: str = "key.pem"
         self._thread: threading.Thread | None = None
+        self._handler = None
 
-    # ---- builder methods ----
+    # --- builder methods ---
+    def with_handler(self, fn: Callable[[bytes], bytes]) -> Self:
+        """Set the business logic handler. If it's CPU/blocking, pass blocking=True."""
+        self._handler = fn
+        return self
+
     def with_host(self, host: str) -> Self:
         self.host = host
         return self
@@ -132,15 +169,19 @@ class PyQuicServer:
         cfg = QuicConfiguration(is_client=False, alpn_protocols=ALPN)
         cfg.load_cert_chain(certfile=self.cert, keyfile=self.key)
 
-        # Start QUIC server (UDP-based)
+        # Pass handler into each protocol instance
         await serve(
             self.host,
             self.port,
             configuration=cfg,
-            create_protocol=QuicServerProtocol,
+            create_protocol=lambda *a, **k: QuicServerProtocol(
+                *a,
+                handler=self._handler,
+                **k
+            ),
         )
         print(f"[server] QUIC echo up on {self.host}:{self.port} (ALPN={ALPN})")
-        await asyncio.Future()  # run forever (Ctrl+C or process exit to stop)
+        await asyncio.Future()
 
 
 # ----------------------------- DSL: Client -----------------------------
@@ -158,6 +199,7 @@ class PyQuicClient:
         client.send_message("Hello")
         client.close()
     """
+
     def __init__(self) -> None:
         # Defaults; can be overridden via builder methods
         self.host: str = "127.0.0.1"
@@ -258,7 +300,6 @@ class PyQuicClient:
             body = await fut_bytes
         return body.decode(errors="replace")
 
-
     # ---- internals (async, run in background loop) ----
     async def _async_connect(self) -> None:
         cfg = QuicConfiguration(is_client=True, alpn_protocols=ALPN)
@@ -279,6 +320,3 @@ class PyQuicClient:
     async def _async_send(self, data: bytes, *, end_stream: bool) -> None:
         assert self._protocol is not None
         self._protocol.send_data(data, end_stream=end_stream)
-
-
-

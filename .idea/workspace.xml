@@ -162,6 +162,7 @@
     "Python.PyIOEffectExample.executor": "Run",
     "Python.QuicClient.executor": "Run",
     "Python.QuicCore.executor": "Run",
+    "Python.QuicCorePerfTest.executor": "Run",
     "Python.QuicCoreTest.executor": "Run",
     "Python.QuicServer.executor": "Run",
     "Python.StaticType.executor": "Run",
@@ -183,7 +184,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/pablogarcia/Development/Dive-into-Python/com/politrons/py-quic",
+    "last_opened_file_path": "/Users/pablogarcia/Development/Dive-into-Python/com/politrons/py-quic/src/test",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -198,8 +199,8 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/com/politrons/py-quic" />
       <recent name="$PROJECT_DIR$/com/politrons/py-quic/src/test" />
+      <recent name="$PROJECT_DIR$/com/politrons/py-quic" />
       <recent name="$PROJECT_DIR$/com/politrons/py-quic/src" />
       <recent name="$PROJECT_DIR$/com/politrons/quic" />
       <recent name="$PROJECT_DIR$/com/politrons/pyio-effect/src/pyio_effect" />
@@ -213,28 +214,6 @@
     </key>
   </component>
   <component name="RunManager" selected="Python.QuicCoreTest">
-    <configuration name="AsyncFeature" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="DiveIntoPython" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/com/politrons/features" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/com/politrons/features/AsyncFeature.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="LlamaModel" type="PythonConfigurationType" factoryName="Python">
       <module name="DiveIntoPython" />
       <option name="ENV_FILES" value="" />
@@ -273,6 +252,28 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/com/politrons/quic/QuicClient.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="QuicCorePerfTest" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="DiveIntoPython" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/com/politrons/py-quic/src/test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/com/politrons/py-quic/src/test/QuicCorePerfTest.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -373,8 +374,8 @@
     <list>
       <item itemvalue="Python.StaticType" />
       <item itemvalue="Python.LlamaModel" />
-      <item itemvalue="Python.AsyncFeature" />
       <item itemvalue="Python.QuicClient" />
+      <item itemvalue="Python.QuicCorePerfTest" />
       <item itemvalue="Python.QuicCoreTest" />
       <item itemvalue="Python.QuicServer" />
       <item itemvalue="Python.core" />
@@ -382,10 +383,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.QuicCoreTest" />
+        <item itemvalue="Python.QuicCorePerfTest" />
         <item itemvalue="Python.core" />
         <item itemvalue="Python.QuicClient" />
         <item itemvalue="Python.QuicServer" />
-        <item itemvalue="Python.AsyncFeature" />
       </list>
     </recent_temporary>
   </component>
@@ -465,22 +466,6 @@
       <option name="presentableId" value="LOCAL-00008" />
       <option name="project" value="LOCAL" />
       <updated>1625781860585</updated>
-    </task>
-    <task id="LOCAL-00016" summary="Llama AI model">
-      <option name="closed" value="true" />
-      <created>1744012696509</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1744012696509</updated>
-    </task>
-    <task id="LOCAL-00017" summary="Llama AI model">
-      <option name="closed" value="true" />
-      <created>1744539486135</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1744539486135</updated>
     </task>
     <task id="LOCAL-00018" summary="kafka stream">
       <option name="closed" value="true" />
@@ -794,7 +779,23 @@
       <option name="project" value="LOCAL" />
       <updated>1755863648214</updated>
     </task>
-    <option name="localTasksCounter" value="57" />
+    <task id="LOCAL-00057" summary="Quic">
+      <option name="closed" value="true" />
+      <created>1755865236967</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1755865236967</updated>
+    </task>
+    <task id="LOCAL-00058" summary="Quic">
+      <option name="closed" value="true" />
+      <created>1755865618627</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1755865618627</updated>
+    </task>
+    <option name="localTasksCounter" value="59" />
     <servers />
   </component>
   <component name="ToolWindowManager">

@@ -5,6 +5,10 @@ import time
 
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parents[1]))
 
+
+def test_handler(data: bytes) -> bytes:
+    return data
+
 from py_quic import PyQuicClient, PyQuicServer
 
 if __name__ == "__main__":
@@ -14,6 +18,7 @@ if __name__ == "__main__":
               .with_port(4433)
               .with_cert("cert.pem")
               .with_key("key.pem")
+              .with_handler(test_handler)
               .start())
 
     time.sleep(0.5)  # small grace so the server binds
@@ -30,3 +35,5 @@ if __name__ == "__main__":
     print(fut1.result())
     print(fut2.result())
     client.close()
+
+
