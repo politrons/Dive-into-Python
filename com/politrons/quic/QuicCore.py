@@ -1,15 +1,12 @@
-# Run (self-signed): python client.py --host 127.0.0.1 --port 4433 --insecure
-# Or with CA/valid certs: drop --insecure and provide --server-name if needed.
 
-import argparse
 import asyncio
 import ssl
-
+import threading
 from aioquic.asyncio import connect
+from aioquic.quic.configuration import QuicConfiguration
+from aioquic.quic.events import HandshakeCompleted, StreamDataReceived
 from aioquic.asyncio import serve
 from aioquic.asyncio.protocol import QuicConnectionProtocol
-from aioquic.quic.configuration import QuicConfiguration
-from aioquic.quic.events import StreamDataReceived, HandshakeCompleted
 
 ALPN = ["echo"]
 
@@ -70,23 +67,6 @@ class QuicClientProtocol(QuicConnectionProtocol):
         self._quic.send_stream_data(self._tx_stream_id, message, end_stream=end_stream)
         self.transmit()
 
-async def start_server(host: str, port: int, cert: str, key: str):
-    # Configure QUIC server with TLS certificate
-    cfg = QuicConfiguration(is_client=False, alpn_protocols=ALPN)
-    cfg.load_cert_chain(certfile=cert, keyfile=key)
-
-    # Start QUIC server (UDP-based)
-    await serve(
-        host,
-        port,
-        configuration=cfg,
-        create_protocol=QuicServerProtocol,
-    )
-    print(f"[server] QUIC echo up on {host}:{port} (ALPN={ALPN})")
-    # Keep running forever
-    await asyncio.Future()
-
-
 
 class QuicServer:
     def __init__( self,host: str,port: int, cert:str, key:str):
@@ -96,24 +76,23 @@ class QuicServer:
         self.key = key
 
     def start(self):
-        asyncio.run(start_server(self.host, self.port, self.cert, self.key))
+        asyncio.run(self._start_server())
 
+    async def _start_server(self):
+        # Configure QUIC server with TLS certificate
+        cfg = QuicConfiguration(is_client=False, alpn_protocols=ALPN)
+        cfg.load_cert_chain(certfile=self.cert, keyfile=self.key)
 
-# QuicCore.py — only QuicClient changed
-# Comments are in English.
-
-import asyncio
-import ssl
-import threading
-from aioquic.asyncio import connect
-from aioquic.asyncio.protocol import QuicConnectionProtocol
-from aioquic.quic.configuration import QuicConfiguration
-from aioquic.quic.events import HandshakeCompleted, StreamDataReceived
-
-ALPN = ["echo"]
-
-# ... QuicServerProtocol and QuicClientProtocol stay as you have them ...
-
+        # Start QUIC server (UDP-based)
+        await serve(
+            self.host,
+            self.port,
+            configuration=cfg,
+            create_protocol=QuicServerProtocol,
+        )
+        print(f"[server] QUIC echo up on {self.host}:{self.port} (ALPN={ALPN})")
+        # Keep running forever
+        await asyncio.Future()
 
 class QuicClient:
     """
@@ -126,6 +105,7 @@ class QuicClient:
         self.insecure = insecure
         self.server_name = server_name
 
+        # We create a new event loop where to keep the client connection open
         self._loop = asyncio.new_event_loop()
         self._thread = threading.Thread(target=self._run_loop, daemon=True)
         self._thread.start()
@@ -141,11 +121,6 @@ class QuicClient:
         # Dedicated event loop for QUIC IO
         asyncio.set_event_loop(self._loop)
         self._loop.run_forever()
-
-    def close(self):
-        asyncio.run(self._async_close())
-        self._loop.call_soon_threadsafe(self._loop.stop)
-        self._thread.join(timeout=2.0)
 
     def send_message(self, message: str, *, end_stream: bool = False):
         # Thread-safe: schedule the send in the background loop
@@ -173,15 +148,6 @@ class QuicClient:
         self._protocol = await self._connect_cm.__aenter__()
         # Wait until protocol signals handshake done and stream opened
         await self._protocol.ready.wait()
-
-    async def _async_close(self):
-        if self._protocol is not None:
-            self._protocol._quic.close(error_code=0)
-            self._protocol.transmit()
-        if self._connect_cm is not None:
-            await self._connect_cm.__aexit__(None, None, None)
-        self._protocol = None
-        self._connect_cm = None
 
     async def _async_send(self, data: bytes, *, end_stream: bool):
         # Use the persistent stream exposed by protocol
