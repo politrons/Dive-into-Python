@@ -5,7 +5,6 @@ import time
 
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parents[1]))
 
-
 def test_handler(data: bytes) -> bytes:
     return data
 

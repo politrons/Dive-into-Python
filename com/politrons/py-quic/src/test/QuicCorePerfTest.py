@@ -16,6 +16,9 @@ sys.path.insert(0, str(pathlib.Path(__file__).resolve().parents[1]))
 
 from py_quic import PyQuicClient, PyQuicServer
 
+def test_handler(data: bytes) -> bytes:
+    return data.upper()
+
 if __name__ == "__main__":
     # Start server with a fluent DSL (no constructor args)
     server = (PyQuicServer()
@@ -23,6 +26,7 @@ if __name__ == "__main__":
               .with_port(4433)
               .with_cert("cert.pem")
               .with_key("key.pem")
+              .with_handler(test_handler)
               .start())
 
     time.sleep(0.5)  # small grace so the server binds

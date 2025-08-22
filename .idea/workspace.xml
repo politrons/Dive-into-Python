@@ -5,8 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8be487bd-795f-4553-99bf-91d578dccde6" name="Default Changelist" comment="Quic">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/com/politrons/py-quic/src/py_quic/core.py" beforeDir="false" afterPath="$PROJECT_DIR$/com/politrons/py-quic/src/py_quic/core.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/com/politrons/py-quic/src/test/QuicCoreTest.py" beforeDir="false" afterPath="$PROJECT_DIR$/com/politrons/py-quic/src/test/QuicCoreTest.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -467,14 +465,6 @@
       <option name="project" value="LOCAL" />
       <updated>1625781860585</updated>
     </task>
-    <task id="LOCAL-00018" summary="kafka stream">
-      <option name="closed" value="true" />
-      <created>1753653745424</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1753653745424</updated>
-    </task>
     <task id="LOCAL-00019" summary="kafka stream">
       <option name="closed" value="true" />
       <created>1753653875876</created>
@@ -795,7 +785,15 @@
       <option name="project" value="LOCAL" />
       <updated>1755865618627</updated>
     </task>
-    <option name="localTasksCounter" value="59" />
+    <task id="LOCAL-00059" summary="Quic">
+      <option name="closed" value="true" />
+      <created>1755868003967</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1755868003967</updated>
+    </task>
+    <option name="localTasksCounter" value="60" />
     <servers />
   </component>
   <component name="ToolWindowManager">
