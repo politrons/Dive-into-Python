@@ -3,8 +3,6 @@ import pathlib
 import sys
 import time
 
-sys.path.insert(0, str(pathlib.Path(__file__).resolve().parents[1]))
-
 from py_quic import PyQuicClient, PyQuicServer
 
 def test_handler(data: bytes) -> bytes:

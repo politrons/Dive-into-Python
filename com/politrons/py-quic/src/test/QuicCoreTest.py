@@ -1,13 +1,11 @@
-import pathlib
-import sys
 import time
 
-sys.path.insert(0, str(pathlib.Path(__file__).resolve().parents[1]))
+from py_quic import PyQuicServer, PyQuicClient
+
 
 def test_handler(data: bytes) -> bytes:
     return data
 
-from py_quic import PyQuicClient, PyQuicServer
 
 if __name__ == "__main__":
     # Start server with a fluent DSL (no constructor args)
