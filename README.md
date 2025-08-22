@@ -54,3 +54,11 @@ A lightweight, generic collection class that provides:
 ✅ Zero dependencies - pure Python implementation
 
 * **[PyF-Collection](com/politrons/pyf-collection)**
+
+## PyQuic
+
+ a simple Python library for the QUIC protocol!
+Clean fluent API that handles 1,000+ concurrent requests/second with zero head-of-line blocking. 
+ Makes QUIC (HTTP/3's backbone) accessible to Python developers without the complexity.
+
+* **[Py-quic](com/politrons/py-quic)**

@@ -213,7 +213,7 @@
       <recent name="$PROJECT_DIR$/com/politrons/ai" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.QuicCorePerfMultiTest">
+  <component name="RunManager" selected="Python.QuicCorePerfTest">
     <configuration name="LlamaModel" type="PythonConfigurationType" factoryName="Python">
       <module name="DiveIntoPython" />
       <option name="ENV_FILES" value="" />
@@ -382,9 +382,9 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.QuicCorePerfTest" />
         <item itemvalue="Python.QuicCorePerfMultiTest" />
         <item itemvalue="Python.QuicCoreTest" />
-        <item itemvalue="Python.QuicCorePerfTest" />
         <item itemvalue="Python.core" />
         <item itemvalue="Python.QuicClient" />
       </list>
