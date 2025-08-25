@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8be487bd-795f-4553-99bf-91d578dccde6" name="Default Changelist" comment="Quic">
-      <change afterPath="$PROJECT_DIR$/com/politrons/py-quic/src/test/QuicCorePerfMultiTest.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/com/politrons/features/PyChannel.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -157,6 +157,7 @@
     "Python.LlamaModel.executor": "Run",
     "Python.Monads.executor": "Run",
     "Python.PatternMatching.executor": "Run",
+    "Python.PyChannel.executor": "Run",
     "Python.PyIO.executor": "Run",
     "Python.PyIOEffectExample.executor": "Run",
     "Python.QuicClient.executor": "Run",
@@ -213,7 +214,7 @@
       <recent name="$PROJECT_DIR$/com/politrons/ai" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.QuicCorePerfTest">
+  <component name="RunManager" selected="Python.PyChannel">
     <configuration name="LlamaModel" type="PythonConfigurationType" factoryName="Python">
       <module name="DiveIntoPython" />
       <option name="ENV_FILES" value="" />
@@ -238,7 +239,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="QuicClient" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="PyChannel" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="DiveIntoPython" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -247,11 +248,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/com/politrons/quic" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/com/politrons/features" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/com/politrons/quic/QuicClient.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/com/politrons/features/PyChannel.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -374,7 +375,7 @@
     <list>
       <item itemvalue="Python.StaticType" />
       <item itemvalue="Python.LlamaModel" />
-      <item itemvalue="Python.QuicClient" />
+      <item itemvalue="Python.PyChannel" />
       <item itemvalue="Python.QuicCorePerfMultiTest" />
       <item itemvalue="Python.QuicCorePerfTest" />
       <item itemvalue="Python.QuicCoreTest" />
@@ -382,11 +383,11 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.PyChannel" />
         <item itemvalue="Python.QuicCorePerfTest" />
         <item itemvalue="Python.QuicCorePerfMultiTest" />
         <item itemvalue="Python.QuicCoreTest" />
         <item itemvalue="Python.core" />
-        <item itemvalue="Python.QuicClient" />
       </list>
     </recent_temporary>
   </component>
@@ -466,30 +467,6 @@
       <option name="presentableId" value="LOCAL-00008" />
       <option name="project" value="LOCAL" />
       <updated>1625781860585</updated>
-    </task>
-    <task id="LOCAL-00023" summary="pattern matching">
-      <option name="closed" value="true" />
-      <created>1754669754032</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1754669754032</updated>
-    </task>
-    <task id="LOCAL-00024" summary="pattern matching">
-      <option name="closed" value="true" />
-      <created>1754669811421</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1754669811421</updated>
-    </task>
-    <task id="LOCAL-00025" summary="pattern matching">
-      <option name="closed" value="true" />
-      <created>1754670031130</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1754670031130</updated>
     </task>
     <task id="LOCAL-00026" summary="http client/server">
       <option name="closed" value="true" />
@@ -795,7 +772,31 @@
       <option name="project" value="LOCAL" />
       <updated>1755868861022</updated>
     </task>
-    <option name="localTasksCounter" value="64" />
+    <task id="LOCAL-00064" summary="Quic">
+      <option name="closed" value="true" />
+      <created>1755897510938</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1755897510938</updated>
+    </task>
+    <task id="LOCAL-00065" summary="Quic">
+      <option name="closed" value="true" />
+      <created>1755897681978</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1755897681978</updated>
+    </task>
+    <task id="LOCAL-00066" summary="Quic">
+      <option name="closed" value="true" />
+      <created>1755897716344</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1755897716345</updated>
+    </task>
+    <option name="localTasksCounter" value="67" />
     <servers />
   </component>
   <component name="ToolWindowManager">
