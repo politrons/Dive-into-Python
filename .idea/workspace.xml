@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8be487bd-795f-4553-99bf-91d578dccde6" name="Default Changelist" comment="Quic">
-      <change afterPath="$PROJECT_DIR$/com/politrons/features/PyChannel.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="8be487bd-795f-4553-99bf-91d578dccde6" name="Default Changelist" comment="Channel">
+      <change beforePath="$PROJECT_DIR$/com/politrons/features/PyChannel.py" beforeDir="false" afterPath="$PROJECT_DIR$/com/politrons/features/PyChannel.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -468,14 +467,6 @@
       <option name="project" value="LOCAL" />
       <updated>1625781860585</updated>
     </task>
-    <task id="LOCAL-00026" summary="http client/server">
-      <option name="closed" value="true" />
-      <created>1755250920408</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
-      <option name="project" value="LOCAL" />
-      <updated>1755250920408</updated>
-    </task>
     <task id="LOCAL-00027" summary="http client/server">
       <option name="closed" value="true" />
       <created>1755251985360</created>
@@ -796,7 +787,15 @@
       <option name="project" value="LOCAL" />
       <updated>1755897716345</updated>
     </task>
-    <option name="localTasksCounter" value="67" />
+    <task id="LOCAL-00067" summary="Channel">
+      <option name="closed" value="true" />
+      <created>1756157344032</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1756157344032</updated>
+    </task>
+    <option name="localTasksCounter" value="68" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -845,7 +844,8 @@
     <MESSAGE value="IO Monad" />
     <MESSAGE value="PyFCollection" />
     <MESSAGE value="Quic" />
-    <option name="LAST_COMMIT_MESSAGE" value="Quic" />
+    <MESSAGE value="Channel" />
+    <option name="LAST_COMMIT_MESSAGE" value="Channel" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Dive_into_Python$KafkaFeature.coverage" NAME="KafkaFeature Coverage Results" MODIFIED="1753653544635" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/com/politrons/kafka" />

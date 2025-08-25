@@ -1,5 +1,3 @@
-# Comments are in English.
-
 import asyncio
 from typing import Generic, TypeVar
 
