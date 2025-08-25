@@ -19,6 +19,7 @@ Here we cover with examples the most famous features of [Python 3](https://www.p
 * **[Async](com/politrons/features/AsyncFeature.py)**
 * **[Pattern matching](com/politrons/features/PatternMatching.py)**
 * **[DataClasses](com/politrons/features/DataClasses.py)**
+* **[Channel](com/politrons/features/Channel.py)**
 
 
 ## Actor model
