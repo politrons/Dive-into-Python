@@ -1,5 +1,7 @@
 # PyIO - Python Effects System
 
+[![PyPI Downloads](https://static.pepy.tech/personalized-badge/pyio-effect?period=total&units=INTERNATIONAL_SYSTEM&left_color=BLACK&right_color=GREEN&left_text=downloads)](https://pepy.tech/projects/pyio-effect)
+
 A lightweight monadic effects system for Python that provides safe error handling and functional composition. PyIO wraps values and exceptions, allowing you to chain operations without explicit error checking at each step.
 
 ## Overview

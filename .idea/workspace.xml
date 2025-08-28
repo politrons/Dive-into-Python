@@ -5,7 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8be487bd-795f-4553-99bf-91d578dccde6" name="Default Changelist" comment="Channel">
-      <change beforePath="$PROJECT_DIR$/com/politrons/features/PyChannel.py" beforeDir="false" afterPath="$PROJECT_DIR$/com/politrons/features/PyChannel.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/com/politrons/pyf-collection/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/com/politrons/pyf-collection/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -143,60 +144,60 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.ActorModel.executor": "Run",
-    "Python.AsyncFeature.executor": "Run",
-    "Python.CircuitBreaker.executor": "Run",
-    "Python.Classes.executor": "Run",
-    "Python.DataClasses.executor": "Run",
-    "Python.IOMonad.executor": "Run",
-    "Python.KafkaFeature.executor": "Run",
-    "Python.KafkaStream.executor": "Run",
-    "Python.LlamaModel.executor": "Run",
-    "Python.Monads.executor": "Run",
-    "Python.PatternMatching.executor": "Run",
-    "Python.PyChannel.executor": "Run",
-    "Python.PyIO.executor": "Run",
-    "Python.PyIOEffectExample.executor": "Run",
-    "Python.QuicClient.executor": "Run",
-    "Python.QuicCore.executor": "Run",
-    "Python.QuicCorePerfMultiTest.executor": "Run",
-    "Python.QuicCorePerfTest.executor": "Run",
-    "Python.QuicCoreTest.executor": "Run",
-    "Python.QuicServer.executor": "Run",
-    "Python.StaticType.executor": "Run",
-    "Python.TypeClasses.executor": "Run",
-    "Python.app.server.executor": "Run",
-    "Python.chat_gpt.executor": "Run",
-    "Python.client.executor": "Run",
-    "Python.core (1).executor": "Run",
-    "Python.core (2).executor": "Run",
-    "Python.core PyFCollection.executor": "Run",
-    "Python.core.executor": "Run",
-    "Python.core_perf_test.executor": "Run",
-    "Python.core_test (1).executor": "Run",
-    "Python.core_test.executor": "Run",
-    "Python.gen_protos.executor": "Run",
-    "Python.server.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/pablogarcia/Development/Dive-into-Python/com/politrons/py-quic/src/test",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.43498272",
-    "settings.editor.selected.configurable": "project.propDebugger",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.ActorModel.executor&quot;: &quot;Run&quot;,
+    &quot;Python.AsyncFeature.executor&quot;: &quot;Run&quot;,
+    &quot;Python.CircuitBreaker.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Classes.executor&quot;: &quot;Run&quot;,
+    &quot;Python.DataClasses.executor&quot;: &quot;Run&quot;,
+    &quot;Python.IOMonad.executor&quot;: &quot;Run&quot;,
+    &quot;Python.KafkaFeature.executor&quot;: &quot;Run&quot;,
+    &quot;Python.KafkaStream.executor&quot;: &quot;Run&quot;,
+    &quot;Python.LlamaModel.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Monads.executor&quot;: &quot;Run&quot;,
+    &quot;Python.PatternMatching.executor&quot;: &quot;Run&quot;,
+    &quot;Python.PyChannel.executor&quot;: &quot;Run&quot;,
+    &quot;Python.PyIO.executor&quot;: &quot;Run&quot;,
+    &quot;Python.PyIOEffectExample.executor&quot;: &quot;Run&quot;,
+    &quot;Python.QuicClient.executor&quot;: &quot;Run&quot;,
+    &quot;Python.QuicCore.executor&quot;: &quot;Run&quot;,
+    &quot;Python.QuicCorePerfMultiTest.executor&quot;: &quot;Run&quot;,
+    &quot;Python.QuicCorePerfTest.executor&quot;: &quot;Run&quot;,
+    &quot;Python.QuicCoreTest.executor&quot;: &quot;Run&quot;,
+    &quot;Python.QuicServer.executor&quot;: &quot;Run&quot;,
+    &quot;Python.StaticType.executor&quot;: &quot;Run&quot;,
+    &quot;Python.TypeClasses.executor&quot;: &quot;Run&quot;,
+    &quot;Python.app.server.executor&quot;: &quot;Run&quot;,
+    &quot;Python.chat_gpt.executor&quot;: &quot;Run&quot;,
+    &quot;Python.client.executor&quot;: &quot;Run&quot;,
+    &quot;Python.core (1).executor&quot;: &quot;Run&quot;,
+    &quot;Python.core (2).executor&quot;: &quot;Run&quot;,
+    &quot;Python.core PyFCollection.executor&quot;: &quot;Run&quot;,
+    &quot;Python.core.executor&quot;: &quot;Run&quot;,
+    &quot;Python.core_perf_test.executor&quot;: &quot;Run&quot;,
+    &quot;Python.core_test (1).executor&quot;: &quot;Run&quot;,
+    &quot;Python.core_test.executor&quot;: &quot;Run&quot;,
+    &quot;Python.gen_protos.executor&quot;: &quot;Run&quot;,
+    &quot;Python.server.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/pablogarcia/Development/Dive-into-Python/com/politrons/py-quic/src/test&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.43498272&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propDebugger&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/com/politrons/py-quic/src/test" />
@@ -213,7 +214,7 @@
       <recent name="$PROJECT_DIR$/com/politrons/ai" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.PyChannel">
+  <component name="RunManager" selected="Python.StaticType">
     <configuration name="Channel" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="DiveIntoPython" />
       <option name="ENV_FILES" value="" />
@@ -374,7 +375,7 @@
     <list>
       <item itemvalue="Python.StaticType" />
       <item itemvalue="Python.LlamaModel" />
-      <item itemvalue="Python.PyChannel" />
+      <item itemvalue="Python.Channel" />
       <item itemvalue="Python.QuicCorePerfMultiTest" />
       <item itemvalue="Python.QuicCorePerfTest" />
       <item itemvalue="Python.QuicCoreTest" />
@@ -382,7 +383,6 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.PyChannel" />
         <item itemvalue="Python.QuicCorePerfTest" />
         <item itemvalue="Python.QuicCorePerfMultiTest" />
         <item itemvalue="Python.QuicCoreTest" />
@@ -466,22 +466,6 @@
       <option name="presentableId" value="LOCAL-00008" />
       <option name="project" value="LOCAL" />
       <updated>1625781860585</updated>
-    </task>
-    <task id="LOCAL-00027" summary="http client/server">
-      <option name="closed" value="true" />
-      <created>1755251985360</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1755251985360</updated>
-    </task>
-    <task id="LOCAL-00028" summary="grpc pattern">
-      <option name="closed" value="true" />
-      <created>1755425802258</created>
-      <option name="number" value="00028" />
-      <option name="presentableId" value="LOCAL-00028" />
-      <option name="project" value="LOCAL" />
-      <updated>1755425802258</updated>
     </task>
     <task id="LOCAL-00029" summary="grpc pattern">
       <option name="closed" value="true" />
@@ -795,7 +779,23 @@
       <option name="project" value="LOCAL" />
       <updated>1756157344032</updated>
     </task>
-    <option name="localTasksCounter" value="68" />
+    <task id="LOCAL-00068" summary="Channel">
+      <option name="closed" value="true" />
+      <created>1756157863688</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1756157863688</updated>
+    </task>
+    <task id="LOCAL-00069" summary="Channel">
+      <option name="closed" value="true" />
+      <created>1756158035159</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1756158035159</updated>
+    </task>
+    <option name="localTasksCounter" value="70" />
     <servers />
   </component>
   <component name="ToolWindowManager">

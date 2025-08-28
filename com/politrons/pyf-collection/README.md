@@ -1,5 +1,7 @@
 # PyF Collection
 
+[![PyPI Downloads](https://static.pepy.tech/personalized-badge/pyf-collection?period=total&units=INTERNATIONAL_SYSTEM&left_color=BLACK&right_color=GREEN&left_text=downloads)](https://pepy.tech/projects/pyf-collection)
+
 A Python library that brings functional programming collection operations to Python, inspired by monadic operations from languages like Scala and Haskell.
 
 ## Installation

@@ -1,5 +1,7 @@
 # PyQuic - QUIC Client/Server Library
 
+[![PyPI Downloads](https://static.pepy.tech/personalized-badge/py-quic?period=total&units=INTERNATIONAL_SYSTEM&left_color=BLACK&right_color=GREEN&left_text=downloads)](https://pepy.tech/projects/py-quic)
+
 PyQuic is a Python library that provides a simplified, fluent API for building QUIC clients and servers using the `aioquic` library. It abstracts away the complexity of QUIC protocol handling while providing a clean, builder-pattern interface for both client and server implementations.
 
 ## Features
