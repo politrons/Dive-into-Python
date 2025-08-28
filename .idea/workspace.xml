@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8be487bd-795f-4553-99bf-91d578dccde6" name="Default Changelist" comment="Channel">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/com/politrons/pyf-collection/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/com/politrons/pyf-collection/README.md" afterDir="false" />
-    </list>
+    <list default="true" id="8be487bd-795f-4553-99bf-91d578dccde6" name="Default Changelist" comment="Channel" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -467,14 +464,6 @@
       <option name="project" value="LOCAL" />
       <updated>1625781860585</updated>
     </task>
-    <task id="LOCAL-00029" summary="grpc pattern">
-      <option name="closed" value="true" />
-      <created>1755427471147</created>
-      <option name="number" value="00029" />
-      <option name="presentableId" value="LOCAL-00029" />
-      <option name="project" value="LOCAL" />
-      <updated>1755427471147</updated>
-    </task>
     <task id="LOCAL-00030" summary="grpc pattern">
       <option name="closed" value="true" />
       <created>1755429009331</created>
@@ -795,7 +784,15 @@
       <option name="project" value="LOCAL" />
       <updated>1756158035159</updated>
     </task>
-    <option name="localTasksCounter" value="70" />
+    <task id="LOCAL-00070" summary="Channel">
+      <option name="closed" value="true" />
+      <created>1756378948028</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1756378948028</updated>
+    </task>
+    <option name="localTasksCounter" value="71" />
     <servers />
   </component>
   <component name="ToolWindowManager">

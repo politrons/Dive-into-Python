@@ -2,6 +2,8 @@ Author Pablo Picouto Garcia
 
 ![My image](img/python.png)
 
+Is this repo useful? Please ⭑Star this repository and share the love.
+
 Here we cover with examples the most famous features of [Python 3](https://www.python.org/) 
 
 ## Features
