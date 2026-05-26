@@ -4,7 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8be487bd-795f-4553-99bf-91d578dccde6" name="Default Changelist" comment="Channel" />
+    <list default="true" id="8be487bd-795f-4553-99bf-91d578dccde6" name="Default Changelist" comment="Channel">
+      <change afterPath="$PROJECT_DIR$/com/politrons/ai/mcp_browser_agent/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/com/politrons/ai/mcp_browser_agent/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/com/politrons/ai/mcp_browser_agent/agent.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/com/politrons/ai/mcp_browser_agent/fast-agent.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/com/politrons/ai/mcp_browser_agent/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/com/politrons/ai/mcp_browser_agent/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/com/politrons/ai/mcp_browser_agent/pyproject.toml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/com/politrons/ai/mcp_browser_agent/stream-debug/20260526_131317_turn1_request.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/com/politrons/ai/mcp_browser_agent/stream-debug/20260526_131329_turn1_request.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/com/politrons/ai/mcp_browser_agent/stream-debug/20260526_131350_turn1_request.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/com/politrons/ai/app.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/com/politrons/ai/chat_gpt.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/com/politrons/ai/templates/index.html" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -52,12 +68,12 @@
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
   </component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/politrons/Dive-into-Python.git&quot;,
-    &quot;accountId&quot;: &quot;79e4496b-f900-454f-8c48-87f6a55d1a75&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/politrons/Dive-into-Python.git",
+    "accountId": "dd71e2cd-1dba-42b0-908c-7b56f96e695d"
   }
-}</component>
+}]]></component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -141,60 +157,64 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python.ActorModel.executor&quot;: &quot;Run&quot;,
-    &quot;Python.AsyncFeature.executor&quot;: &quot;Run&quot;,
-    &quot;Python.CircuitBreaker.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Classes.executor&quot;: &quot;Run&quot;,
-    &quot;Python.DataClasses.executor&quot;: &quot;Run&quot;,
-    &quot;Python.IOMonad.executor&quot;: &quot;Run&quot;,
-    &quot;Python.KafkaFeature.executor&quot;: &quot;Run&quot;,
-    &quot;Python.KafkaStream.executor&quot;: &quot;Run&quot;,
-    &quot;Python.LlamaModel.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Monads.executor&quot;: &quot;Run&quot;,
-    &quot;Python.PatternMatching.executor&quot;: &quot;Run&quot;,
-    &quot;Python.PyChannel.executor&quot;: &quot;Run&quot;,
-    &quot;Python.PyIO.executor&quot;: &quot;Run&quot;,
-    &quot;Python.PyIOEffectExample.executor&quot;: &quot;Run&quot;,
-    &quot;Python.QuicClient.executor&quot;: &quot;Run&quot;,
-    &quot;Python.QuicCore.executor&quot;: &quot;Run&quot;,
-    &quot;Python.QuicCorePerfMultiTest.executor&quot;: &quot;Run&quot;,
-    &quot;Python.QuicCorePerfTest.executor&quot;: &quot;Run&quot;,
-    &quot;Python.QuicCoreTest.executor&quot;: &quot;Run&quot;,
-    &quot;Python.QuicServer.executor&quot;: &quot;Run&quot;,
-    &quot;Python.StaticType.executor&quot;: &quot;Run&quot;,
-    &quot;Python.TypeClasses.executor&quot;: &quot;Run&quot;,
-    &quot;Python.app.server.executor&quot;: &quot;Run&quot;,
-    &quot;Python.chat_gpt.executor&quot;: &quot;Run&quot;,
-    &quot;Python.client.executor&quot;: &quot;Run&quot;,
-    &quot;Python.core (1).executor&quot;: &quot;Run&quot;,
-    &quot;Python.core (2).executor&quot;: &quot;Run&quot;,
-    &quot;Python.core PyFCollection.executor&quot;: &quot;Run&quot;,
-    &quot;Python.core.executor&quot;: &quot;Run&quot;,
-    &quot;Python.core_perf_test.executor&quot;: &quot;Run&quot;,
-    &quot;Python.core_test (1).executor&quot;: &quot;Run&quot;,
-    &quot;Python.core_test.executor&quot;: &quot;Run&quot;,
-    &quot;Python.gen_protos.executor&quot;: &quot;Run&quot;,
-    &quot;Python.server.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/pablogarcia/Development/Dive-into-Python/com/politrons/py-quic/src/test&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.43498272&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;project.propDebugger&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.AbstractClasses.executor": "Run",
+    "Python.ActorModel.executor": "Run",
+    "Python.AsyncFeature.executor": "Run",
+    "Python.Channel.executor": "Run",
+    "Python.CircuitBreaker.executor": "Run",
+    "Python.Classes.executor": "Run",
+    "Python.DataClasses.executor": "Run",
+    "Python.IOMonad.executor": "Run",
+    "Python.KafkaFeature.executor": "Run",
+    "Python.KafkaStream.executor": "Run",
+    "Python.LlamaModel.executor": "Run",
+    "Python.Monads.executor": "Run",
+    "Python.PatternMatching.executor": "Run",
+    "Python.PyChannel.executor": "Run",
+    "Python.PyIO.executor": "Run",
+    "Python.PyIOEffectExample.executor": "Run",
+    "Python.QuicClient.executor": "Run",
+    "Python.QuicCore.executor": "Run",
+    "Python.QuicCorePerfMultiTest.executor": "Run",
+    "Python.QuicCorePerfTest.executor": "Run",
+    "Python.QuicCoreTest.executor": "Run",
+    "Python.QuicServer.executor": "Run",
+    "Python.StaticType.executor": "Run",
+    "Python.TypeClasses.executor": "Run",
+    "Python.app.server.executor": "Run",
+    "Python.chat_gpt.executor": "Run",
+    "Python.client.executor": "Run",
+    "Python.core (1).executor": "Run",
+    "Python.core (2).executor": "Run",
+    "Python.core PyFCollection.executor": "Run",
+    "Python.core.executor": "Run",
+    "Python.core_perf_test.executor": "Run",
+    "Python.core_test (1).executor": "Run",
+    "Python.core_test.executor": "Run",
+    "Python.gen_protos.executor": "Run",
+    "Python.python agent.py --message \"Find the official Spring AI MCP client documentation and summarize how it configures MCP tools with Ollama.\" --quiet.executor": "Run",
+    "Python.server.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/politrons/development/Dive-into-Python",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.43498272",
+    "settings.editor.selected.configurable": "project.propDebugger",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/com/politrons/py-quic/src/test" />
@@ -211,7 +231,29 @@
       <recent name="$PROJECT_DIR$/com/politrons/ai" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.StaticType">
+  <component name="RunManager" selected="Python.Channel">
+    <configuration name="AbstractClasses" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="DiveIntoPython" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/com/politrons/features" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/com/politrons/features/AbstractClasses.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="Channel" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="DiveIntoPython" />
       <option name="ENV_FILES" value="" />
@@ -243,7 +285,6 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="SDK_NAME" value="Python 3.9" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/com/politrons/ai" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
@@ -302,28 +343,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="QuicCoreTest" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="DiveIntoPython" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/com/politrons/py-quic/src/test" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/com/politrons/py-quic/src/test/QuicCoreTest.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="StaticType" type="PythonConfigurationType" factoryName="Python">
       <module name="DiveIntoPython" />
       <option name="ENV_FILES" value="" />
@@ -347,7 +366,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="core" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="python agent.py --message &quot;Find the official Spring AI MCP client documentation and summarize how it configures MCP tools with Ollama.&quot; --quiet" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="DiveIntoPython" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -356,12 +375,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/com/politrons/py-quic/src/py_quic" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/com/politrons/ai/mcp_browser_agent" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/com/politrons/py-quic/src/py_quic/core.py" />
-      <option name="PARAMETERS" value="" />
+      <option name="SCRIPT_NAME" value="agent.py" />
+      <option name="PARAMETERS" value="--message &quot;Find the official Spring AI MCP client documentation and summarize how it configures MCP tools with Ollama.&quot; --quiet" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
@@ -373,24 +392,25 @@
       <item itemvalue="Python.StaticType" />
       <item itemvalue="Python.LlamaModel" />
       <item itemvalue="Python.Channel" />
+      <item itemvalue="Python.python agent.py --message &quot;Find the official Spring AI MCP client documentation and summarize how it configures MCP tools with Ollama.&quot; --quiet" />
+      <item itemvalue="Python.AbstractClasses" />
       <item itemvalue="Python.QuicCorePerfMultiTest" />
       <item itemvalue="Python.QuicCorePerfTest" />
-      <item itemvalue="Python.QuicCoreTest" />
-      <item itemvalue="Python.core" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Channel" />
+        <item itemvalue="Python.python agent.py --message &quot;Find the official Spring AI MCP client documentation and summarize how it configures MCP tools with Ollama.&quot; --quiet" />
+        <item itemvalue="Python.AbstractClasses" />
         <item itemvalue="Python.QuicCorePerfTest" />
         <item itemvalue="Python.QuicCorePerfMultiTest" />
-        <item itemvalue="Python.QuicCoreTest" />
-        <item itemvalue="Python.core" />
       </list>
     </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-python-sdk-657d8234b839-64d779b69b7a-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-251.26927.74" />
+        <option value="bundled-python-sdk-ce6832f46686-7b97d883f26b-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-252.25557.178" />
       </set>
     </attachedChunks>
   </component>

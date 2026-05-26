@@ -1,0 +1,9 @@
+{
+  "name": "mcp-browser-agent-poc",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Local Playwright MCP runtime dependency for the Python Browser MCP Agent POC.",
+  "devDependencies": {
+    "@playwright/mcp": "0.0.75"
+  }
+}

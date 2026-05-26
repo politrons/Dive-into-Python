@@ -65,3 +65,7 @@ Clean fluent API that handles 1,000+ concurrent requests/second with zero head-o
  Makes QUIC (HTTP/3's backbone) accessible to Python developers without the complexity.
 
 * **[Py-quic](com/politrons/py-quic)**
+
+## AI MCP
+
+* **[Browser MCP Agent POC](com/politrons/ai/mcp_browser_agent)**: local Ollama agent wired to Playwright Browser MCP through `fast-agent` YAML configuration.

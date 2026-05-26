@@ -1,0 +1,24 @@
+default_model: "generic.qwen3.5:latest"
+
+logger:
+  transports: [console]
+  level: info
+  progress_display: true
+
+usage_telemetry:
+  enabled: false
+
+generic:
+  api_key: "ollama"
+  base_url: "http://localhost:11434/v1"
+
+mcp:
+  servers:
+    browser:
+      transport: "stdio"
+      command: "./node_modules/.bin/playwright-mcp"
+      args:
+        - "--headless"
+        - "--browser"
+        - "firefox"
+      read_timeout_seconds: 45
