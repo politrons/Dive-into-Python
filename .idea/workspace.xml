@@ -5,14 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8be487bd-795f-4553-99bf-91d578dccde6" name="Default Changelist" comment="AI Agent">
-      <change afterPath="$PROJECT_DIR$/com/politrons/ai/mcp_memory_agent/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/com/politrons/ai/mcp_memory_agent/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/com/politrons/ai/mcp_memory_agent/agent.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/com/politrons/ai/mcp_memory_agent/data/.gitkeep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/com/politrons/ai/mcp_memory_agent/fast-agent.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/com/politrons/ai/mcp_memory_agent/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/com/politrons/ai/mcp_memory_agent/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/com/politrons/ai/mcp_memory_agent/pyproject.toml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/com/politrons/ai/mcp_sequential_thinking_agent/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/com/politrons/ai/mcp_sequential_thinking_agent/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/com/politrons/ai/mcp_sequential_thinking_agent/agent.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/com/politrons/ai/mcp_sequential_thinking_agent/fast-agent.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/com/politrons/ai/mcp_sequential_thinking_agent/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/com/politrons/ai/mcp_sequential_thinking_agent/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/com/politrons/ai/mcp_sequential_thinking_agent/pyproject.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/com/politrons/ai/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/com/politrons/ai/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -478,22 +478,6 @@
       <option name="project" value="LOCAL" />
       <updated>1625781860585</updated>
     </task>
-    <task id="LOCAL-00031" summary="grpc pattern">
-      <option name="closed" value="true" />
-      <created>1755429604293</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
-      <option name="project" value="LOCAL" />
-      <updated>1755429604293</updated>
-    </task>
-    <task id="LOCAL-00032" summary="grpc pattern">
-      <option name="closed" value="true" />
-      <created>1755429737668</created>
-      <option name="number" value="00032" />
-      <option name="presentableId" value="LOCAL-00032" />
-      <option name="project" value="LOCAL" />
-      <updated>1755429737668</updated>
-    </task>
     <task id="LOCAL-00033" summary="grpc pattern">
       <option name="closed" value="true" />
       <created>1755429782169</created>
@@ -806,7 +790,23 @@
       <option name="project" value="LOCAL" />
       <updated>1779794439503</updated>
     </task>
-    <option name="localTasksCounter" value="72" />
+    <task id="LOCAL-00072" summary="AI Agent">
+      <option name="closed" value="true" />
+      <created>1779958643088</created>
+      <option name="number" value="00072" />
+      <option name="presentableId" value="LOCAL-00072" />
+      <option name="project" value="LOCAL" />
+      <updated>1779958643088</updated>
+    </task>
+    <task id="LOCAL-00073" summary="AI Agent">
+      <option name="closed" value="true" />
+      <created>1779958843047</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1779958843047</updated>
+    </task>
+    <option name="localTasksCounter" value="74" />
     <servers />
   </component>
   <component name="ToolWindowManager">

@@ -1,0 +1,9 @@
+{
+  "name": "mcp-sequential-thinking-agent-poc",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Local Sequential Thinking MCP runtime dependency for the Python Sequential Thinking MCP Agent POC.",
+  "devDependencies": {
+    "@modelcontextprotocol/server-sequential-thinking": "2025.12.18"
+  }
+}

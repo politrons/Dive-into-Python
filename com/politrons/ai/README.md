@@ -29,6 +29,7 @@ own virtual environment because `fast-agent-mcp` requires Python `>=3.13.5`.
 | --- | --- | --- | --- | --- |
 | `mcp_browser_agent` | Playwright Browser MCP | Browser automation and web navigation | Browser runtime artifacts only | Active POC |
 | `mcp_memory_agent` | Memory MCP | Persistent agent memory as a local knowledge graph | `data/memory.jsonl` | Active POC |
+| `mcp_sequential_thinking_agent` | Sequential Thinking MCP | Prompt decomposition, structured planning, assumptions, and risks | None | Active POC |
 
 ## Module Details
 
@@ -88,6 +89,38 @@ Expected result:
 
 - The first call writes a durable observation through Memory MCP.
 - The second call reads the graph with Memory MCP and answers using the stored preference.
+
+### `mcp_sequential_thinking_agent`
+
+Sequential Thinking MCP proof of concept using FastAgent and the official
+Sequential Thinking MCP server.
+
+Main files:
+
+- `agent.py`: declares the FastAgent agent and binds it to the `sequential_thinking` MCP server.
+- `fast-agent.yaml`: configures Ollama and the Sequential Thinking MCP server command.
+- `package.json`: pins the local Node dependency `@modelcontextprotocol/server-sequential-thinking`.
+- `pyproject.toml`: declares the Python dependency on `fast-agent-mcp`.
+- `README.md`: module-specific setup, run commands, and wiring explanation.
+
+What it demonstrates:
+
+- Sequential Thinking MCP helps the LLM structure a request before answering.
+- It can break a prompt into subtasks, risks, assumptions, and next actions.
+- It does not execute tasks, read files, browse, or persist memory by itself.
+- The concrete MCP implementation is downloaded through `npm install`; FastAgent
+  only starts the configured command from YAML.
+
+Example planning flow:
+
+```bash
+python agent.py --message "Plan a new FastAgent POC for Git MCP. I want minimal Python code, YAML configuration, setup steps, and validation commands."
+```
+
+Expected result:
+
+- The agent calls Sequential Thinking MCP.
+- It returns a structured plan with subtasks, risks, assumptions, and validation steps.
 
 ## Runtime Artifacts
 
