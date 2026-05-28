@@ -1,0 +1,9 @@
+{
+  "name": "mcp-filesystem-agent-poc",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Local Filesystem MCP runtime dependency for the Python Filesystem MCP Agent POC.",
+  "devDependencies": {
+    "@modelcontextprotocol/server-filesystem": "2026.1.14"
+  }
+}

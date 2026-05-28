@@ -1,0 +1,22 @@
+default_model: "generic.qwen3.5:latest"
+
+logger:
+  transports: [console]
+  level: info
+  progress_display: true
+
+usage_telemetry:
+  enabled: false
+
+generic:
+  api_key: "ollama"
+  base_url: "http://localhost:11434/v1"
+
+mcp:
+  servers:
+    filesystem:
+      transport: "stdio"
+      command: "/Users/politrons/development/Dive-into-Python/com/politrons/ai/mcp_filesystem_agent/node_modules/.bin/mcp-server-filesystem"
+      args:
+        - "${MCP_FILESYSTEM_ROOT:/Users/politrons/development/Dive-into-Python/com/politrons/ai/mcp_filesystem_agent/workspace}"
+      read_timeout_seconds: 45

@@ -1,0 +1,10 @@
+.venv/
+node_modules/
+__pycache__/
+*.pyc
+*.egg-info/
+.fast-agent/
+fastagent.jsonl
+fast-agent-*.jsonl
+logs/
+.env

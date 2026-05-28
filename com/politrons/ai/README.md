@@ -18,7 +18,7 @@ The common goal is to mirror the Spring AI style used in the Java project:
 - Local LLM runtime: Ollama
 - Default model used in these POCs: `qwen3.5:latest`
 - MCP transport: `stdio`
-- Node MCP dependencies: installed per POC through `package.json`
+- MCP runtime dependencies: installed per POC through `package.json` or run as Docker images
 
 The repository root virtual environment uses Python `3.12`, so each POC has its
 own virtual environment because `fast-agent-mcp` requires Python `>=3.13.5`.
@@ -28,6 +28,9 @@ own virtual environment because `fast-agent-mcp` requires Python `>=3.13.5`.
 | Folder | MCP Server | Purpose | Persistence | Status |
 | --- | --- | --- | --- | --- |
 | `mcp_browser_agent` | Playwright Browser MCP | Browser automation and web navigation | Browser runtime artifacts only | Active POC |
+| `mcp_filesystem_agent` | Filesystem MCP | Controlled local file listing, reading, writing, and editing | Files under the configured root | Active POC |
+| `mcp_git_agent` | Filesystem MCP + Git MCP | Local file-to-Git workflows: read/write files, status, diff, commit, pull, and push | Git working tree and remotes | Active POC |
+| `mcp_github_agent` | GitHub MCP | GitHub repository, issue, pull request, branch, commit, and code inspection | None | Active POC |
 | `mcp_memory_agent` | Memory MCP | Persistent agent memory as a local knowledge graph | `data/memory.jsonl` | Active POC |
 | `mcp_sequential_thinking_agent` | Sequential Thinking MCP | Prompt decomposition, structured planning, assumptions, and risks | None | Active POC |
 
@@ -56,6 +59,107 @@ Important note:
 - Local Ollama models may not always respect OpenAI tool-calling controls such as
   `tool_choice`. When the output prints JSON like `{"name": "browser__..."}` and
   the usage summary says `Tools 0`, no MCP tool was actually executed.
+
+### `mcp_filesystem_agent`
+
+Filesystem MCP proof of concept using FastAgent and the official Filesystem MCP
+server.
+
+Main files:
+
+- `agent.py`: declares the FastAgent agent and binds it to the `filesystem` MCP server.
+- `fast-agent.yaml`: configures Ollama, Filesystem MCP, and the allowed root folder.
+- `package.json`: pins the local Node dependency `@modelcontextprotocol/server-filesystem`.
+- `pyproject.toml`: declares the Python dependency on `fast-agent-mcp`.
+- `workspace/.gitkeep`: keeps the default sandbox folder in the repository.
+- `README.md`: module-specific setup, run commands, and wiring explanation.
+
+What it demonstrates:
+
+- Filesystem MCP can expose controlled local filesystem access to the LLM.
+- The default allowed root is `mcp_filesystem_agent/workspace`.
+- The allowed root can be changed with `MCP_FILESYSTEM_ROOT` without editing Python code.
+- A first call can list files; a later call can create, read, or edit files if explicitly requested.
+
+Example filesystem flow:
+
+```bash
+python agent.py --message "Use Filesystem MCP to list the files in the configured root."
+```
+
+Expected result:
+
+- The agent calls Filesystem MCP.
+- It returns files from the configured root only.
+
+### `mcp_git_agent`
+
+Filesystem MCP plus Git MCP proof of concept using FastAgent,
+`@modelcontextprotocol/server-filesystem`, and `@cyanheads/git-mcp-server`.
+
+Main files:
+
+- `agent.py`: declares the FastAgent agent and binds it to the `filesystem` and `git` MCP servers.
+- `fast-agent.yaml`: configures Ollama, Filesystem MCP, Git MCP, and the allowed roots.
+- `package.json`: pins the local Node dependencies for Filesystem MCP and Git MCP.
+- `pyproject.toml`: declares the Python dependency on `fast-agent-mcp`.
+- `.env.example`: documents optional Git MCP runtime settings.
+- `README.md`: module-specific setup, run commands, local push notes, and wiring explanation.
+
+What it demonstrates:
+
+- Filesystem MCP can read or write local files inside the configured root.
+- Git MCP can operate on a local Git working tree, unlike GitHub MCP, which talks
+  to GitHub APIs.
+- The agent can inspect status, diff, branches, remotes, and logs.
+- The agent can stage, commit, pull, and push only when the user explicitly asks
+  for those write operations.
+- The default allowed root for both MCPs is `/Users/politrons/development/Dive-into-Python`.
+- Push authentication comes from the local Git setup: SSH agent, HTTPS credential
+  helper, or the remote configuration already present in the repository.
+
+Example Git flow:
+
+```bash
+python agent.py --message "Use Git MCP to show git status for /Users/politrons/development/Dive-into-Python. Do not stage, commit, pull, or push anything."
+```
+
+Expected result:
+
+- The agent calls Git MCP.
+- It returns local repository status without changing the working tree.
+
+### `mcp_github_agent`
+
+GitHub MCP proof of concept using FastAgent and GitHub's official MCP server.
+
+Main files:
+
+- `agent.py`: declares the FastAgent agent and binds it to the `github` MCP server.
+- `fast-agent.yaml`: configures Ollama and runs `ghcr.io/github/github-mcp-server` through Docker.
+- `pyproject.toml`: declares the Python dependency on `fast-agent-mcp`.
+- `README.md`: module-specific setup, credential handling, run commands, and wiring explanation.
+
+What it demonstrates:
+
+- GitHub MCP can expose GitHub repository, issue, pull request, branch, commit, and code tools.
+- The GitHub server is configured in read-only mode by default with `GITHUB_READ_ONLY=1`.
+- Credentials stay outside git through `GITHUB_PERSONAL_ACCESS_TOKEN`.
+- FastAgent starts the Docker command declared in YAML and exposes the MCP tools to the LLM.
+- This MCP is for GitHub API operations. Use `mcp_git_agent` for local commits
+  and real `git push` from the checked-out repository.
+
+Example GitHub flow:
+
+```bash
+export GITHUB_PERSONAL_ACCESS_TOKEN=github_pat_your_token_here
+python agent.py --message "Use GitHub MCP to summarize the repository modelcontextprotocol/servers."
+```
+
+Expected result:
+
+- The agent calls GitHub MCP.
+- It returns repository-derived information from GitHub.
 
 ### `mcp_memory_agent`
 
@@ -134,6 +238,9 @@ as source modules:
 - `stream-debug/`: optional OpenAI/Ollama request traces.
 - `fastagent.jsonl`: local FastAgent logs.
 - `data/memory.jsonl`: generated Memory MCP graph data.
+- `mcp_filesystem_agent/workspace/*`: Files created during Filesystem MCP tests.
+- `mcp_git_agent/logs/*`: Git MCP runtime logs.
+- `mcp_git_agent/workspace/*`: Optional local clones or files used during Git MCP tests.
 
 ## How To Add Another MCP POC
 
@@ -144,7 +251,7 @@ mcp_<name>_agent/
   agent.py
   fast-agent.yaml
   pyproject.toml
-  package.json
+  package.json  # only when the MCP server is distributed through NPM
   README.md
 ```
 
@@ -152,6 +259,7 @@ Recommended pattern:
 
 - Keep `agent.py` as a small FastAgent declaration.
 - Put model, provider, server command, server arguments, and environment variables in `fast-agent.yaml`.
-- Pin Node MCP server dependencies in `package.json`.
+- Pin Node MCP server dependencies in `package.json` when the MCP server is distributed through NPM.
+- Use Docker in `fast-agent.yaml` when the official MCP server is distributed as a container.
 - Keep secrets out of git.
 - Document one-shot prompts that prove the MCP server is actually invoked.

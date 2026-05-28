@@ -1,0 +1,14 @@
+[project]
+name = "mcp-filesystem-agent-poc"
+version = "0.1.0"
+description = "Python proof of concept for a local Ollama agent wired to Filesystem MCP through FastAgent configuration."
+requires-python = ">=3.13.5,<3.15"
+dependencies = [
+    "fast-agent-mcp>=0.7.12,<0.8.0",
+]
+
+[tool.setuptools]
+py-modules = ["agent"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]

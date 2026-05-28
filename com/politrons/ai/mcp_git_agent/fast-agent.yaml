@@ -1,0 +1,36 @@
+default_model: "generic.qwen3.5:latest"
+
+logger:
+  transports: [console]
+  level: info
+  progress_display: true
+
+usage_telemetry:
+  enabled: false
+
+generic:
+  api_key: "ollama"
+  base_url: "http://localhost:11434/v1"
+
+mcp:
+  servers:
+    filesystem:
+      transport: "stdio"
+      command: "/Users/politrons/development/Dive-into-Python/com/politrons/ai/mcp_git_agent/node_modules/.bin/mcp-server-filesystem"
+      args:
+        - "${MCP_FILESYSTEM_ROOT:/Users/politrons/development/Dive-into-Python}"
+      read_timeout_seconds: 45
+
+    git:
+      transport: "stdio"
+      command: "/Users/politrons/development/Dive-into-Python/com/politrons/ai/mcp_git_agent/node_modules/.bin/git-mcp-server"
+      env:
+        MCP_TRANSPORT_TYPE: "stdio"
+        MCP_LOG_LEVEL: "info"
+        MCP_RESPONSE_FORMAT: "json"
+        GIT_BASE_DIR: "${MCP_GIT_BASE_DIR:/Users/politrons/development/Dive-into-Python}"
+        LOGS_DIR: "/Users/politrons/development/Dive-into-Python/com/politrons/ai/mcp_git_agent/logs"
+        GIT_SIGN_COMMITS: "${GIT_SIGN_COMMITS:false}"
+        GIT_TERMINAL_PROMPT: "0"
+        SSH_AUTH_SOCK: "${SSH_AUTH_SOCK:}"
+      read_timeout_seconds: 45
