@@ -6,7 +6,8 @@
 - `fast-agent.yaml` defines MCP servers.
 - `generic.*` models target OpenAI-compatible endpoints, including Ollama at `http://localhost:11434/v1`.
 - The framework owns the CLI, including interactive and one-shot runs.
-- The LLM automatically sees the MCP tools declared for the agent and can call them when the prompt requires browsing.
+- The LLM automatically sees the MCP tools declared for the agent.
+- The current agent instruction asks the model to use Browser MCP before answering every user request.
 
 ## Files
 
@@ -58,7 +59,7 @@ One-shot prompt:
 python agent.py --message "Find the official Spring AI MCP client documentation and summarize how it configures MCP tools with Ollama." --quiet
 ```
 
-News/current-data prompt:
+Browser tool prompt:
 
 ```bash
 python agent.py --message "Use the MCP browser to find the latest news about corruption allegations involving Jose Luis Rodriguez Zapatero. Summarize only what reputable sources report, state allegations as allegations, and include source URLs."
@@ -68,10 +69,9 @@ When debugging tool usage, run without `--quiet`. The fast-agent usage summary s
 
 ## Tool-calling model note
 
-This POC defaults to `qwen3.5:latest` because it was validated with both cases:
+This POC defaults to `qwen3.5:latest` because it produced better tool-calling behavior than `llama3.1` through Ollama's OpenAI-compatible endpoint during local tests.
 
-- Normal coding prompt: answers directly without Browser MCP.
-- URL navigation prompt: emits a real Browser MCP tool call.
+The current agent instruction asks the model to use Browser MCP before every answer. The code also passes an OpenAI-compatible `tool_choice` override for `browser__browser_navigate`; however, local Ollama streaming behavior can still ignore or mishandle tool forcing depending on the model.
 
 If the answer prints JSON such as `{"name": "browser__browser_navigate", ...}` and the usage summary says `Tools 0`, the MCP server was not called. That is a model/tool-calling compatibility problem, not a Playwright MCP browser problem.
 
