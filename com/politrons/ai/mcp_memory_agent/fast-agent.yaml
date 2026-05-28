@@ -1,0 +1,22 @@
+default_model: "generic.qwen3.5:latest"
+
+logger:
+  transports: [console]
+  level: info
+  progress_display: true
+
+usage_telemetry:
+  enabled: false
+
+generic:
+  api_key: "ollama"
+  base_url: "http://localhost:11434/v1"
+
+mcp:
+  servers:
+    memory:
+      transport: "stdio"
+      command: "/Users/politrons/development/Dive-into-Python/com/politrons/ai/mcp_memory_agent/node_modules/.bin/mcp-server-memory"
+      env:
+        MEMORY_FILE_PATH: "${MCP_MEMORY_FILE_PATH:/Users/politrons/development/Dive-into-Python/com/politrons/ai/mcp_memory_agent/data/memory.jsonl}"
+      read_timeout_seconds: 45

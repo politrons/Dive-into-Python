@@ -4,22 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8be487bd-795f-4553-99bf-91d578dccde6" name="Default Changelist" comment="Channel">
-      <change afterPath="$PROJECT_DIR$/com/politrons/ai/mcp_browser_agent/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/com/politrons/ai/mcp_browser_agent/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/com/politrons/ai/mcp_browser_agent/agent.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/com/politrons/ai/mcp_browser_agent/fast-agent.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/com/politrons/ai/mcp_browser_agent/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/com/politrons/ai/mcp_browser_agent/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/com/politrons/ai/mcp_browser_agent/pyproject.toml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/com/politrons/ai/mcp_browser_agent/stream-debug/20260526_131317_turn1_request.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/com/politrons/ai/mcp_browser_agent/stream-debug/20260526_131329_turn1_request.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/com/politrons/ai/mcp_browser_agent/stream-debug/20260526_131350_turn1_request.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/com/politrons/ai/app.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/com/politrons/ai/chat_gpt.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/com/politrons/ai/templates/index.html" beforeDir="false" />
+    <list default="true" id="8be487bd-795f-4553-99bf-91d578dccde6" name="Default Changelist" comment="AI Agent">
+      <change afterPath="$PROJECT_DIR$/com/politrons/ai/mcp_memory_agent/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/com/politrons/ai/mcp_memory_agent/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/com/politrons/ai/mcp_memory_agent/agent.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/com/politrons/ai/mcp_memory_agent/data/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/com/politrons/ai/mcp_memory_agent/fast-agent.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/com/politrons/ai/mcp_memory_agent/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/com/politrons/ai/mcp_memory_agent/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/com/politrons/ai/mcp_memory_agent/pyproject.toml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -183,6 +176,7 @@
     "Python.QuicServer.executor": "Run",
     "Python.StaticType.executor": "Run",
     "Python.TypeClasses.executor": "Run",
+    "Python.agent.executor": "Run",
     "Python.app.server.executor": "Run",
     "Python.chat_gpt.executor": "Run",
     "Python.client.executor": "Run",
@@ -231,7 +225,7 @@
       <recent name="$PROJECT_DIR$/com/politrons/ai" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.Channel">
+  <component name="RunManager" selected="Python.agent">
     <configuration name="AbstractClasses" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="DiveIntoPython" />
       <option name="ENV_FILES" value="" />
@@ -299,28 +293,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="QuicCorePerfMultiTest" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="DiveIntoPython" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/com/politrons/py-quic/src/test" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/com/politrons/py-quic/src/test/QuicCorePerfMultiTest.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="QuicCorePerfTest" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="DiveIntoPython" />
       <option name="ENV_FILES" value="" />
@@ -366,6 +338,28 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="agent" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="DiveIntoPython" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/com/politrons/ai/mcp_memory_agent" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/com/politrons/ai/mcp_memory_agent/agent.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="python agent.py --message &quot;Find the official Spring AI MCP client documentation and summarize how it configures MCP tools with Ollama.&quot; --quiet" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="DiveIntoPython" />
       <option name="ENV_FILES" value="" />
@@ -392,18 +386,18 @@
       <item itemvalue="Python.StaticType" />
       <item itemvalue="Python.LlamaModel" />
       <item itemvalue="Python.Channel" />
+      <item itemvalue="Python.agent" />
       <item itemvalue="Python.python agent.py --message &quot;Find the official Spring AI MCP client documentation and summarize how it configures MCP tools with Ollama.&quot; --quiet" />
       <item itemvalue="Python.AbstractClasses" />
-      <item itemvalue="Python.QuicCorePerfMultiTest" />
       <item itemvalue="Python.QuicCorePerfTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.agent" />
         <item itemvalue="Python.Channel" />
         <item itemvalue="Python.python agent.py --message &quot;Find the official Spring AI MCP client documentation and summarize how it configures MCP tools with Ollama.&quot; --quiet" />
         <item itemvalue="Python.AbstractClasses" />
         <item itemvalue="Python.QuicCorePerfTest" />
-        <item itemvalue="Python.QuicCorePerfMultiTest" />
       </list>
     </recent_temporary>
   </component>
@@ -483,14 +477,6 @@
       <option name="presentableId" value="LOCAL-00008" />
       <option name="project" value="LOCAL" />
       <updated>1625781860585</updated>
-    </task>
-    <task id="LOCAL-00030" summary="grpc pattern">
-      <option name="closed" value="true" />
-      <created>1755429009331</created>
-      <option name="number" value="00030" />
-      <option name="presentableId" value="LOCAL-00030" />
-      <option name="project" value="LOCAL" />
-      <updated>1755429009331</updated>
     </task>
     <task id="LOCAL-00031" summary="grpc pattern">
       <option name="closed" value="true" />
@@ -812,7 +798,15 @@
       <option name="project" value="LOCAL" />
       <updated>1756378948028</updated>
     </task>
-    <option name="localTasksCounter" value="71" />
+    <task id="LOCAL-00071" summary="AI Agent">
+      <option name="closed" value="true" />
+      <created>1779794439503</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1779794439503</updated>
+    </task>
+    <option name="localTasksCounter" value="72" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -862,7 +856,8 @@
     <MESSAGE value="PyFCollection" />
     <MESSAGE value="Quic" />
     <MESSAGE value="Channel" />
-    <option name="LAST_COMMIT_MESSAGE" value="Channel" />
+    <MESSAGE value="AI Agent" />
+    <option name="LAST_COMMIT_MESSAGE" value="AI Agent" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Dive_into_Python$KafkaFeature.coverage" NAME="KafkaFeature Coverage Results" MODIFIED="1753653544635" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/com/politrons/kafka" />
