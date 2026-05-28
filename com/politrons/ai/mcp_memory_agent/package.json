@@ -4,6 +4,6 @@
   "version": "0.1.0",
   "description": "Local Memory MCP runtime dependency for the Python Memory MCP Agent POC.",
   "devDependencies": {
-    "@modelcontextprotocol/server-memory": "2025.8.4"
+    "@modelcontextprotocol/server-memory": "2025.11.25"
   }
 }
